@@ -1,0 +1,13 @@
+# Subject data must never enter this repository
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+*.bam
+*.cram
+*.fastq*
+*.fq*
+data/
+annotated.csv
+candidates*.vcf.gz*
+# Submission CSV contains the proband's variant coordinates
+submission_track1.csv
