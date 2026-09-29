@@ -2,7 +2,7 @@
 
 **Hackathon:** Rare Disease, Real Kid: The MVA Hackathon 2026 (Sage Bionetworks, MVA Society, Hugging Face, BEACON)
 **Track:** 1 — Variant prediction
-**Participant:** Lakshya (student; individual entry)
+**Participant:** **Team:** PHA — Pari, Harshita , Aradhya
 **Proband:** PROBAND01 (sample `WGS_EX2312012`, single-sample WGS, GRCh38)
 **Date:** 30 September 2026
 
