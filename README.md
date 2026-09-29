@@ -1,6 +1,6 @@
 # MVA Hackathon 2026 — Track 1 (Variant Prediction)
 
-Individual entry for *Rare Disease, Real Kid: The MVA Hackathon 2026*
+Team PHA entry for *Rare Disease, Real Kid: The MVA Hackathon 2026*
 (Sage Bionetworks, MVA Society, Hugging Face, BEACON).
 
 **Result:** two rare heterozygous coding variants in *BUB1B* (p.Leu737Ter, ClinVar pathogenic;
