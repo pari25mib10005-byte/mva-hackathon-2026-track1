@@ -62,16 +62,16 @@ Criteria per Richards et al. 2015 with ClinGen SVI refinements: PM2 applied at s
 
 | Code | Strength | Points | Rationale |
 |---|---|---|---|
-| PM2_Supporting | Supporting | 1 | Absent from gnomAD v4 genomes and exomes |
+| PM2_Supporting | Supporting | 1 | gnomAD v4 singleton (AC 1 / AN 1,614,226, AF 6.2 × 10⁻⁷), no homozygotes |
 | PM3_Supporting | Supporting | 1 | Phase unknown with a Pathogenic partner allele (SVI: 0.5 pt) |
-| PP3 | ___ | ___ | REVEL ___ (≥0.644 supporting, ≥0.773 moderate, ≥0.932 strong; Pejaver et al. 2022); CADD ___; AlphaMissense ___; SpliceAI max Δ ___ (no splice effect predicted) |
-| PP4 | Supporting | 1 | Phenotype highly specific for BUB1B-related MVA1 (mosaic aneuploidy confirmed cytogenetically in the clinical document) |
-| PM1 | Not applied | 0 | Residue lies in the BUBR1 kinase domain, but the domain is not established as a mutational hotspot free of benign variation |
+| PP3 | Not applied | 0 | REVEL 0.472 (ClinGen indeterminate band, 0.290–0.644); AlphaMissense 0.923, SIFT 0.01, PolyPhen 0.997 and phyloP 4.80 all predict damaging, but predictors conflict and the calibrated REVEL threshold is not met |
+| PP4 | Supporting | 1 | Phenotype highly specific for BUB1B-related MVA1 (cytogenetically confirmed mosaic aneuploidy) |
+| PM1 | Not applied | 0 | Kinase-domain αG helix; the known MVA1 allele p.Leu1012Pro lies 10 residues away, but the domain is not an established hotspot free of benign variation |
 | PS3 | Not applied | 0 | No functional data |
 
-**Total: ___ → VUS (0–5) / Likely pathogenic (6–9).**
+**Total: 3 → VUS.**
 
-Whatever the total, the conclusion is the same: p.Leu737Ter is pathogenic; the second allele is a strong candidate whose classification depends on in-silico evidence and phase. Trio segregation showing the variants in *trans* would upgrade PM3 to moderate (2 pt) and likely lift the pair to a molecular diagnosis.
+On formal criteria p.Asn1002Lys remains a VUS; its identification as the second allele rests on the recessive model, the phenotype, the absence of any other rare coding or splice variant in *BUB1B*, and the structural proximity to a known pathogenic residue. Trio segregation showing the variants in *trans* (PM3 → moderate) plus a functional assay (PS3) would be needed to reach Likely pathogenic.
 
 ## 6. Differential diagnosis
 
