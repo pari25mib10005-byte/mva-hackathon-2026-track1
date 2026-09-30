@@ -63,7 +63,7 @@ Within *BUB1B*, no homozygous coding variant and no splice-site variant was foun
 
 ## 7. Mosaic aneuploidy scan from the proband's own WGS
 
-MVA is defined cytogenetically by mosaic aneuploidy. I tested whether any aneuploidy is visible in the bulk blood WGS itself, using two independent signals per autosome: (a) sequencing depth relative to the genome median, and (b) the B-allele fraction (BAF) of high-quality heterozygous SNPs (`GT=het`, `DP ≥ 20`, `GQ ≥ 30`, `QUAL ≥ 50`; ~2.2 million sites). In a mosaic gain, depth rises and het BAF disperses away from 0.5. Scripts: `mosaic_check.py`, `baf_hist.py`, `baf_bins.py`.
+MVA is defined cytogenetically by mosaic aneuploidy. We tested whether any aneuploidy is visible in the bulk blood WGS itself, using two independent signals per autosome: (a) sequencing depth relative to the genome median, and (b) the B-allele fraction (BAF) of high-quality heterozygous SNPs (`GT=het`, `DP ≥ 20`, `GQ ≥ 30`, `QUAL ≥ 50`; ~2.2 million sites). In a mosaic gain, depth rises and het BAF disperses away from 0.5. Scripts: `mosaic_check.py`, `baf_hist.py`, `baf_bins.py`.
 
 **First pass (whole-chromosome averages) produced a false positive.** Chromosomes 20, 21 and 22 showed elevated depth (1.07–1.11×), increased BAF dispersion (robust z = 4.1, 5.6, 6.0) and a downward mean BAF shift (0.466, 0.444, 0.436 vs 0.487 on chr1). Taken alone this resembles mosaic trisomy at roughly 10–20 %.
 
@@ -71,7 +71,7 @@ MVA is defined cytogenetically by mosaic aneuploidy. I tested whether any aneupl
 
 **After excluding 5 Mb bins with depth > 1.15× the genome median**, chr20 and chr21 fall to the lowest dispersion of all autosomes (z = −1.9, −2.1). A residual on chr22 (z = 6.6) traces to the 22q11 bins at 15–20 Mb, which pass the depth cut but not the BAF check; chr22 from 25 Mb onward is indistinguishable from chr1. Chromosomes 16 and 19 show depth of 1.045× with no BAF change, consistent with GC-content coverage bias rather than aneuploidy.
 
-**Conclusion:** no mosaic aneuploidy is detectable in this bulk blood WGS. This is the expected result rather than a negative finding about the diagnosis: "variegated" means different cells carry different aneuploidies, so no single chromosome accumulates a consistent fraction, and bulk sequencing averages the signal to zero. Detection requires per-cell karyotyping or single-cell sequencing. I note that whole-chromosome summary statistics on chr20/chr22 can be mistaken for low-level mosaic gains; the per-bin check above is the safeguard. Per-chromosome and per-bin aggregates (no genotype-level data) are in `mosaic_per_chrom.csv` and `mosaic_bins.csv`.
+**Conclusion:** no mosaic aneuploidy is detectable in this bulk blood WGS. This is the expected result rather than a negative finding about the diagnosis: "variegated" means different cells carry different aneuploidies, so no single chromosome accumulates a consistent fraction, and bulk sequencing averages the signal to zero. Detection requires per-cell karyotyping or single-cell sequencing. We note that whole-chromosome summary statistics on chr20/chr22 can be mistaken for low-level mosaic gains; the per-bin check above is the safeguard. Per-chromosome and per-bin aggregates (no genotype-level data) are in `mosaic_per_chrom.csv` and `mosaic_bins.csv`.
 
 ## 8. Reproducibility
 
@@ -81,7 +81,7 @@ MVA is defined cytogenetically by mosaic aneuploidy. I tested whether any aneupl
 
 ## 9. AI-assistance disclosure
 
-Anthropic Claude (claude.ai, consumer plan) was used interactively to design the pipeline, debug environment setup, write the annotation and mosaic-scan scripts, interpret the mosaic-scan output (including recognising the first-pass false positive as a repeat-region artefact) and draft this report. No proband data was uploaded to the AI service; only tool output that had already been reduced to the two candidate variants and aggregate counts was discussed. All commands were run locally by the participant and all claims above were checked against the local outputs.
+Anthropic Claude (claude.ai, consumer plan) was used interactively to design the pipeline, debug environment setup, write the annotation and mosaic-scan scripts, interpret the mosaic-scan output (including recognising the first-pass false positive as a repeat-region artefact) and draft this report. No proband data was uploaded to the AI service; only tool output that had already been reduced to the two candidate variants and aggregate counts was discussed. All commands were run locally by the team and all claims above were checked against the local outputs.
 
 ## 10. Acknowledgement
 
