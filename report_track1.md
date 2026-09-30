@@ -2,7 +2,7 @@
 
 **Hackathon:** Rare Disease, Real Kid: The MVA Hackathon 2026 (Sage Bionetworks, MVA Society, Hugging Face, BEACON)
 **Track:** 1 — Variant prediction
-**Participant:** **Team:** PHA — Pari, Aradhya, Harshita (Hugging Face: pari25mib10005)
+**Team:** PHA — Pari, Aradhya, Harshita (Hugging Face: pari25mib10005)
 **Proband:** PROBAND01 (sample `WGS_EX2312012`, single-sample WGS, GRCh38)
 **Date:** 30 September 2026
 
@@ -15,7 +15,7 @@ The proband carries two rare, heterozygous, protein-altering variants in *BUB1B*
 | 1 | chr15:40209701 T>G | c.2210T>G, stop-gained | p.Leu737Ter | 0/1 | 3.3 × 10⁻⁵ | Pathogenic / Likely pathogenic |
 | 2 | chr15:40220612 T>G | c.3006T>G, missense | p.Asn1002Lys | 0/1 | not observed | no record |
 
-Submitted as one paired prediction (compound-heterozygous candidate). MVA1 is autosomal recessive and the clinical phenotype matches; a truncating allele plus a rare kinase-domain missense is the configuration reported in previously published MVA1 cases. This is a strongly supported genetic hypothesis, not a confirmed molecular diagnosis: with a single sample the two variants cannot be shown to be in *trans* (see §6).
+Submitted as one paired prediction (compound-heterozygous candidate). MVA1 is autosomal recessive and the clinical phenotype matches; a truncating allele plus a rare kinase-domain missense is the configuration reported in previously published MVA1 cases. This is a strongly supported genetic hypothesis, not a confirmed molecular diagnosis: with a single sample the two variants cannot be shown to be in *trans* (see §7).
 
 ## 2. Data
 
@@ -43,7 +43,37 @@ Of 184 quality-filtered variants across the three genes, exactly **two** are pro
 
 Allele balance at both sites is close to 0.5 (from FORMAT/AD), consistent with germline heterozygosity rather than mosaicism or a copy-number artefact at these positions.
 
-## 5. Differential diagnosis
+## 5. ACMG/AMP classification
+
+Criteria per Richards et al. 2015 with ClinGen SVI refinements: PM2 applied at supporting strength; PM3 scored per the SVI recessive-phase guidance; strengths combined with the Bayesian point system (Tavtigian et al. 2020): supporting = 1, moderate = 2, strong = 4, very strong = 8; ≥10 Pathogenic, 6–9 Likely pathogenic, 0–5 VUS.
+
+### 5.1 BUB1B c.2210T>G, p.Leu737Ter
+
+| Code | Strength | Points | Rationale |
+|---|---|---|---|
+| PVS1 | Very strong | 8 | Nonsense in exon 18 of 23, >50 nt upstream of the last exon–exon junction → NMD predicted; loss of function is the established MVA1 mechanism |
+| PM2_Supporting | Supporting | 1 | gnomAD genomes AF 3.3 × 10⁻⁵, no homozygotes; consistent with a recessive carrier frequency |
+| PM3_Supporting | Supporting | 1 | Second rare coding variant in the same gene, phase unknown (SVI: 0.5 pt with a non-P/LP partner; conservatively applied at supporting) |
+| — | — | — | ClinVar: Pathogenic/Likely pathogenic, multiple submitters (concordant; not itself a criterion) |
+
+**Total: 10 → Pathogenic.**
+
+### 5.2 BUB1B c.3006T>G, p.Asn1002Lys
+
+| Code | Strength | Points | Rationale |
+|---|---|---|---|
+| PM2_Supporting | Supporting | 1 | Absent from gnomAD v4 genomes and exomes |
+| PM3_Supporting | Supporting | 1 | Phase unknown with a Pathogenic partner allele (SVI: 0.5 pt) |
+| PP3 | ___ | ___ | REVEL ___ (≥0.644 supporting, ≥0.773 moderate, ≥0.932 strong; Pejaver et al. 2022); CADD ___; AlphaMissense ___; SpliceAI max Δ ___ (no splice effect predicted) |
+| PP4 | Supporting | 1 | Phenotype highly specific for BUB1B-related MVA1 (mosaic aneuploidy confirmed cytogenetically in the clinical document) |
+| PM1 | Not applied | 0 | Residue lies in the BUBR1 kinase domain, but the domain is not established as a mutational hotspot free of benign variation |
+| PS3 | Not applied | 0 | No functional data |
+
+**Total: ___ → VUS (0–5) / Likely pathogenic (6–9).**
+
+Whatever the total, the conclusion is the same: p.Leu737Ter is pathogenic; the second allele is a strong candidate whose classification depends on in-silico evidence and phase. Trio segregation showing the variants in *trans* would upgrade PM3 to moderate (2 pt) and likely lift the pair to a molecular diagnosis.
+
+## 6. Differential diagnosis
 
 | Gene | Disorder | Finding |
 |---|---|---|
@@ -53,7 +83,7 @@ Allele balance at both sites is close to 0.5 (from FORMAT/AD), consistent with g
 
 Within *BUB1B*, no homozygous coding variant and no splice-site variant was found, so a homozygous model is not supported.
 
-## 6. Limitations
+## 7. Limitations
 
 1. **Phase is unresolved.** The two variants are ~10.9 kb apart; short-read fragments cannot span them, and no parental samples are available. Compound heterozygosity is therefore inferred from the recessive model and the phenotype, not observed. Trio genotyping or long-read sequencing would resolve this.
 2. **p.Asn1002Lys is a variant of uncertain significance** on formal criteria: rare, conserved and domain-located, but with no functional or ClinVar evidence. If it is not the second allele, the true second hit could be a structural variant or deep-intronic variant not called in this VCF.
@@ -61,7 +91,7 @@ Within *BUB1B*, no homozygous coding variant and no splice-site variant was foun
 4. The primary analysis was candidate-gene driven; a gene-agnostic genome-wide pass (e.g. Exomiser with the proband's HPO terms) was not run.
 5. No experimental validation was performed.
 
-## 7. Mosaic aneuploidy scan from the proband's own WGS
+## 8. Mosaic aneuploidy scan from the proband's own WGS
 
 MVA is defined cytogenetically by mosaic aneuploidy. We tested whether any aneuploidy is visible in the bulk blood WGS itself, using two independent signals per autosome: (a) sequencing depth relative to the genome median, and (b) the B-allele fraction (BAF) of high-quality heterozygous SNPs (`GT=het`, `DP ≥ 20`, `GQ ≥ 30`, `QUAL ≥ 50`; ~2.2 million sites). In a mosaic gain, depth rises and het BAF disperses away from 0.5. Scripts: `mosaic_check.py`, `baf_hist.py`, `baf_bins.py`.
 
@@ -73,16 +103,16 @@ MVA is defined cytogenetically by mosaic aneuploidy. We tested whether any aneup
 
 **Conclusion:** no mosaic aneuploidy is detectable in this bulk blood WGS. This is the expected result rather than a negative finding about the diagnosis: "variegated" means different cells carry different aneuploidies, so no single chromosome accumulates a consistent fraction, and bulk sequencing averages the signal to zero. Detection requires per-cell karyotyping or single-cell sequencing. We note that whole-chromosome summary statistics on chr20/chr22 can be mistaken for low-level mosaic gains; the per-bin check above is the safeguard. Per-chromosome and per-bin aggregates (no genotype-level data) are in `mosaic_per_chrom.csv` and `mosaic_bins.csv`.
 
-## 8. Reproducibility
+## 9. Reproducibility
 
 - Tools: bcftools (via bioconda), Ensembl VEP REST API (GRCh38, default release at run date), Python 3.11, `requests`.
 - Repository contains the BED file, `run.sh`, `annotate.py`, the three mosaic-scan scripts, their aggregate outputs and this report. It contains **no subject data**: the VCF, intermediate VCFs, the annotated variant table and the submission CSV are all git-ignored, as the latter three contain proband genotypes.
 - Submission coordinates were converted from the VCF's unprefixed contigs to the `chr`-prefixed form required by the scorer; `proband_id` is `PROBAND01`.
 
-## 9. AI-assistance disclosure
+## 10. AI-assistance disclosure
 
 Anthropic Claude (claude.ai, consumer plan) was used interactively to design the pipeline, debug environment setup, write the annotation and mosaic-scan scripts, interpret the mosaic-scan output (including recognising the first-pass false positive as a repeat-region artefact) and draft this report. No proband data was uploaded to the AI service; only tool output that had already been reduced to the two candidate variants and aggregate counts was discussed. All commands were run locally by the team and all claims above were checked against the local outputs.
 
-## 10. Acknowledgement
+## 11. Acknowledgement
 
 This work was made possible through the Hackathon organised by Sage Bionetworks in partnership with the MVA Society, Hugging Face and BEACON, with prize sponsorship from AWS and Anthropic. Thanks to the child and family who contributed their data to advance research into this rare disease.
