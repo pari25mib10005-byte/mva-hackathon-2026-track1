@@ -10,10 +10,10 @@
 
 The proband carries two rare, heterozygous, protein-altering variants in *BUB1B*, the gene responsible for Mosaic Variegated Aneuploidy syndrome 1 (MVA1; OMIM 257300):
 
-| Rank | Variant (GRCh38) | Transcript effect | Protein | Genotype | gnomAD genomes AF | ClinVar |
+| Rank | Variant (GRCh38) | Transcript effect | Protein | Genotype | gnomAD AF | ClinVar |
 |---|---|---|---|---|---|---|
 | 1 | [position withheld] T>G | [variant A], stop-gained | [variant A] | 0/1 | 3.3 × 10⁻⁵ | Pathogenic / Likely pathogenic |
-| 2 | [position withheld] T>G | [variant B], missense | [variant B] | 0/1 | not observed | no record |
+| 2 | [position withheld] T>G | [variant B], missense | [variant B] | 0/1 | gnomAD v4 singleton | no record |
 
 Submitted as one paired prediction (compound-heterozygous candidate). MVA1 is autosomal recessive and the clinical phenotype matches; a truncating allele plus a rare kinase-domain missense is the configuration reported in previously published MVA1 cases. This is a strongly supported genetic hypothesis, not a confirmed molecular diagnosis: with a single sample the two variants cannot be shown to be in *trans* (see §7).
 
@@ -39,7 +39,7 @@ All steps are in `run.sh` and `annotate.py` in the accompanying repository and c
 Of 184 quality-filtered variants across the three genes, exactly **two** are protein-altering, both in *BUB1B*, both heterozygous, both rare. Every other variant is intronic or upstream with no predicted functional consequence and no ClinVar assertion.
 
 - **[variant A]** — a premature stop in exon 18 of 23; predicted to trigger nonsense-mediated decay (null allele). Already classified Pathogenic/Likely pathogenic in ClinVar for MVA1 by multiple submitters.
-- **[variant B]** — lies in the C-terminal kinase domain of BUBR1. Absent from gnomAD genomes; a polar-to-basic substitution at a residue conserved across vertebrates. Not in ClinVar. (Note: a *different* nucleotide change, [variant B], also produces [variant B] and is in ClinVar as VUS; no evidence transfers between the two.)
+- **[variant B]** — lies in the C-terminal kinase domain of BUBR1. A gnomAD v4 singleton (AC 1); a polar-to-basic substitution at a residue conserved across vertebrates. Not in ClinVar. (Note: a *different* nucleotide change, [variant B], also produces [variant B] and is in ClinVar as VUS; no evidence transfers between the two.)
 
 Allele balance at both sites is close to 0.5 (from FORMAT/AD), consistent with germline heterozygosity rather than mosaicism or a copy-number artefact at these positions.
 
