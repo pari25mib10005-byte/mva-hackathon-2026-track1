@@ -7,7 +7,7 @@ Team PHA entry for *Rare Disease, Real Kid: The MVA Hackathon 2026*
 p.Asn1002Lys, kinase-domain missense absent from gnomAD), submitted as an unphased
 compound-heterozygous candidate for MVA syndrome 1. A depth + B-allele-fraction scan of the
 same WGS finds **no detectable mosaic aneuploidy**; an apparent chr20/21/22 signal resolves to
-centromeric and 22q11 repeat artefacts on 5 Mb binning (report §7). Full reasoning and limitations: [`report_track1.md`](report_track1.md).
+centromeric and 22q11 repeat artefacts on 5 Mb binning (report §8). Full reasoning and limitations: [`report_track1.md`](report_track1.md).
 
 ## Reproduce
 
