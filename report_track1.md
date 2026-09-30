@@ -71,12 +71,11 @@ Criteria per Richards et al. 2015 with ClinGen SVI refinements: PM2 applied at s
 | PM2_Supporting | Supporting | 1 | gnomAD v4 singleton (AC 1 / AN 1,614,226, AF 6.2 × 10⁻⁷), no homozygotes |
 | PM3_Supporting | Supporting | 1 | Phase unknown with a Pathogenic partner allele (SVI: 0.5 pt) |
 | PP3 | Not applied | 0 | REVEL 0.472 (ClinGen indeterminate band, 0.290–0.644); AlphaMissense 0.923, SIFT 0.01, PolyPhen 0.997 and phyloP 4.80 all predict damaging, but predictors conflict and the calibrated REVEL threshold is not met |
-| PP4 | Supporting | 1 | Phenotype highly specific for BUB1B-related MVA1 (cytogenetically confirmed mosaic aneuploidy) |
+| PP4 | Not applied | 0 | Phenotype consistent with MVA1 (childhood rhabdomyosarcoma, pre- and postnatal growth restriction), but no cytogenetic confirmation of mosaic aneuploidy in the clinical record, so not specific enough for PP4 |
 | PM1 | Not applied | 0 | Kinase-domain αG helix; the known MVA1 allele p.Leu1012Pro lies 10 residues away, but the domain is not an established hotspot free of benign variation |
 | PS3 | Not applied | 0 | No functional data |
 
-**Total: 3 → VUS.**
-
+**Total: 2 → VUS.**
 On formal criteria p.Asn1002Lys remains a VUS; its identification as the second allele rests on the recessive model, the phenotype, the absence of any other rare coding or splice variant in *BUB1B*, and the structural proximity to a known pathogenic residue. Trio segregation showing the variants in *trans* (PM3 → moderate) plus a functional assay (PS3) would be needed to reach Likely pathogenic.
 
 ## 6. Differential diagnosis
