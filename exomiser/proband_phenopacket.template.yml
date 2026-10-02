@@ -1,0 +1,19 @@
+# Template only. The real file lists six HPO terms derived from the gated
+# clinical phenotype document and is not published (data-use terms).
+# subject id must match the VCF sample name (bcftools query -l).
+id: SAMPLE_ID
+subject:
+  id: SAMPLE_ID
+phenotypicFeatures:
+  - type: {id: HP:XXXXXXX, label: <term from clinical document>}
+metaData:
+  created: '2026-10-01T00:00:00Z'
+  createdBy: TeamPHA
+  resources:
+    - id: hp
+      name: human phenotype ontology
+      url: http://purl.obolibrary.org/obo/hp.owl
+      version: hp/releases/2025-12
+      namespacePrefix: HP
+      iriPrefix: 'http://purl.obolibrary.org/obo/HP_'
+  phenopacketSchemaVersion: 1.0
