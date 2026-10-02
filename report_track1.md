@@ -123,8 +123,10 @@ MVA is defined cytogenetically by mosaic aneuploidy. We tested whether any aneup
 - Submission coordinates were converted from the VCF's unprefixed contigs to the `chr`-prefixed form required by the scorer; `proband_id` is `PROBAND01`.
 
 ## 10. AI-assistance disclosure
+## 10. AI-assistance disclosure
 
-Anthropic Claude (claude.ai, consumer plan) was used interactively to design the pipeline, debug environment setup, write the annotation, mosaic-scan, figure and Exomiser scripts.  interpret the mosaic-scan output (including recognising the first-pass false positive as a repeat-region artefact) and draft this report. No proband data was used in AI-assisted analysis; only tool output already reduced to the two candidate variants, gene-level rankings and aggregate counts was discussed. The clinical document and submission file were inadvertently uploaded during post-submission revision and were not opened. All commands were run locally by the team and all claims above were checked against the local outputs.
+Anthropic Claude (claude.ai, consumer plan) was used interactively to design the pipeline, debug environment setup, write the annotation, mosaic-scan, figure and Exomiser scripts, interpret the mosaic-scan output (including recognising the first-pass false positive as a repeat-region artefact) and draft this report. No proband data was used in AI-assisted analysis; only tool output already reduced to the two candidate variants, gene-level rankings and aggregate counts was discussed. All commands were run locally by the team and all claims above were checked against the local outputs.
+
 
 ## 11. Acknowledgement
 
