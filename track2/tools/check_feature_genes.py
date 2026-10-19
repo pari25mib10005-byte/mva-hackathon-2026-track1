@@ -202,8 +202,9 @@ def main():
             for k, alt in enumerate(r[4].split(","), 1):
                 if alt in ("*", "<NON_REF>") or str(k) not in al:
                     continue
+                qc = (r[5], fmt.get("DP", "."), fmt.get("GQ", "."), fmt.get("AD", "."), r[6])
                 for g in gs:
-                    hits.append((g, ch, pos, r[3], alt, zyg))
+                    hits.append((g, ch, pos, r[3], alt, zyg, qc))
     print(f"      {len(hits)} coding/splice-region variant calls in these genes")
 
     print("[3/5] Population frequency, consequence and AlphaMissense (Ensembl VEP)")
@@ -212,13 +213,13 @@ def main():
     print("[4/5] Applying inheritance-aware rules")
     per_gene = collections.defaultdict(list)
     detail = collections.defaultdict(list)
-    for g, ch, pos, ref, alt, zyg in hits:
+    for g, ch, pos, ref, alt, zyg, qc in hits:
         x = ann.get((ch, pos, ref, alt))
         if x:
             x = {**x, "terms": x["by_gene"].get(g, set())}  # this gene's canonical transcript only
         if x and damaging(x):
             per_gene[g].append((x["af"], zyg))
-            detail[g].append((x, zyg))
+            detail[g].append((x, zyg, qc))
     cands = {}
     for g, vs in per_gene.items():
         inh = gene_inh.get(g) or {"AR", "AD"}
@@ -247,11 +248,13 @@ def main():
         print("\nVariant-level detail for candidate genes (no positions; share with care):")
         for g in sorted(c for c in cands if cands[c]):
             print(f"  {g} ({', '.join(sorted(gene_inh.get(g) or {'inheritance not annotated'}))}):")
-            for x, zyg in detail[g]:
+            for x, zyg, qc in detail[g]:
                 am = f"AlphaMissense {x['am']:.2f}" if x["am"] is not None else "AlphaMissense n/a"
                 am += f"; SpliceAI {x['spliceai']:.2f}" if x.get("spliceai") is not None else "; SpliceAI n/a"
                 print(f"    - {', '.join(sorted(x['terms']))} (canonical transcript); {zyg}; max population AF {x['af']:.2g}; {am}; "
                       f"ClinVar: {', '.join(x['clin']) or 'no record'}")
+                print(f"      call quality: QUAL {qc[0]}; read depth {qc[1]}; genotype quality {qc[2]}; "
+                      f"reads ref,alt {qc[3]}; FILTER {qc[4]}")
         print("  Note: two heterozygous variants may sit on the same copy (cis); only parental testing can show they are on opposite copies.")
     print("\nCandidates need expert review (segregation, phenotype fit) before any conclusion.")
     print("Share only the lines above, never positions or genotypes.")

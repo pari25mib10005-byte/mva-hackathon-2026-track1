@@ -96,6 +96,18 @@ This defines the **NAD⁺ → SIRT2 → BUBR1 stabilisation axis** as the primar
 3. Avoid genotoxic agents (MVA predisposes to cancer [2]).
 4. Prefer agents with paediatric safety data.
 
+### 1.6 Independent lines of support for the lever
+
+The NAD⁺ → SIRT2 → BUBR1 lever does not rest on a single study. Four independent kinds of evidence point the same way; what remains untested is only the final link in human cells, which is the first experiment of the validation plan (Section 10).
+
+| Evidence line | Model | Finding | Ref |
+|---|---|---|---|
+| NAD⁺/SIRT2 stabilise BubR1 | Mouse (in vivo) | NAD⁺ precursor raised BubR1; SIRT2 overexpression extended lifespan of BubR1-hypomorphic mice | [5] |
+| SIRT2 protects chromosome fidelity | Sirt2-knockout mouse, human tumours (different laboratory) | SIRT2 loss caused aneuploidy and tumours; SIRT2 acts as a tumour suppressor via mitotic regulation, so boosting it should oppose, not fuel, chromosomal instability | [33] |
+| NAD⁺ precursors raise NAD⁺ in humans | Human trials | Niacin raised blood NAD⁺ up to 8-fold; NR raised NAD⁺ in children and adults | [26, 8, 9] |
+| NR in human genome-instability syndromes | Randomised placebo-controlled trial (Werner syndrome) and open-label studies (ataxia-telangiectasia, children from age 3) | NR raised NAD⁺ and improved clinical markers without serious adverse events; liver-test changes were noted, supporting liver monitoring | [34, 8, 9] |
+| This child's genome | Local VCF analysis | NAD⁺-conversion genes and *SIRT2* intact (Section 7.1) | — |
+
 ---
 
 ## 2. Systematic candidate search (reproducible pipeline)
@@ -182,7 +194,7 @@ Section 3.1 tested only the disease-gene network. To test "genetic or not" prope
 | Muscle | 598 | *PEX5*; plus vincristine-neuropathy risk genotypes (Section 7.1) |
 | Perinatal | 203 | *PEX5* |
 
-**A possible second diagnosis: *PEX5*.** The patient is homozygous for a variant at the splice donor of *PEX5*'s canonical transcript, absent from gnomAD and from ClinVar. If it disrupts splicing, biallelic *PEX5* loss causes a peroxisome biogenesis disorder (Zellweger spectrum), which could link three of the four unexplained features. We report this as a **hypothesis requiring confirmation**: splice-region indels are a common calling artefact, a homozygous novel variant needs orthogonal confirmation, and the classic severe phenotype includes features not listed for this patient. It is cheap to resolve: **plasma very-long-chain fatty acids** (with plasmalogens, phytanic and pristanic acid), Sanger confirmation of the variant, and parental carrier testing. *SERPINA1* can be settled with a serum alpha-1 antitrypsin level.
+**A possible second diagnosis: *PEX5*.** The patient is homozygous for a variant at the splice donor of *PEX5*'s canonical transcript, absent from gnomAD and from ClinVar. If it disrupts splicing, biallelic *PEX5* loss causes a peroxisome biogenesis disorder (Zellweger spectrum), which could link three of the four unexplained features. **Call quality supports it:** all 10 reads at the site carry the variant and none the reference allele, the call passes filters (QUAL 417, genotype quality 37). Depth is lower than typical for a whole genome, which is common at splice-site indels; reduced depth could also reflect a deletion of the other copy, which would still leave both copies affected. We therefore report a **well-supported candidate requiring confirmation**: a homozygous novel variant needs orthogonal (Sanger) confirmation, and the classic severe phenotype includes features not listed for this patient. It is cheap to resolve: **plasma very-long-chain fatty acids** (with plasmalogens, phytanic and pristanic acid), Sanger confirmation of the variant, and parental carrier testing. *SERPINA1* can be settled with a serum alpha-1 antitrypsin level.
 
 ### 3.3 Family history: recurrent pregnancy loss
 
@@ -332,12 +344,17 @@ Agents that disrupt cell division or damage DNA (Section 6) may worsen chromosom
 
 ---
 
-## 10. Validation plan
+## 10. Validation plan (pre-registered success and failure criteria)
 
-1. **Cell model.** In MVA patient-derived cells (or *BUB1B*-knockdown lines), measure BUBR1 protein level, K668 acetylation and missegregation rate (live imaging, micronucleus counts) with and without NR across a dose range. Test **niacin and NR side by side**, with blood-equivalent NAD⁺ measured in the cells, and include *CDKN1A* (p21) and interferon genes as safety readouts, since LINCS suggests niacin may dampen them.
-2. **Dose–response and specificity.** Confirm any BUBR1 increase is dose-dependent and SIRT2-dependent (abolished by SIRT2 knockdown), and check that high-dose nicotinamide does not show the opposite effect.
-3. **Animal model.** Test NR in BubR1^H/H mice for BubR1 level, aneuploidy rate and tumour incidence over time.
-4. **Only then, n-of-1.** Under the child's clinicians and an ethics framework: baseline and on-treatment measurement of the percentage of aneuploid cells in blood (karyotype or single-cell sequencing), plus safety monitoring, with a pre-specified stop rule.
+Each step proceeds only if the previous one meets its success criterion; the thresholds are fixed now, before any data exist.
+
+| Step | Model and treatment | Primary readouts | Success (proceed) | Failure (stop or revise) |
+|---|---|---|---|---|
+| 1. Cells | Patient-derived fibroblasts or lymphoblastoid cells (or *BUB1B*-depleted cells re-expressing the missense allele); NR and nicotinic acid across a dose range, 72 h; vehicle control | Cellular NAD⁺; BUBR1 protein; BUBR1 K668 acetylation; missegregation (micronuclei, lagging chromosomes by live imaging) | NAD⁺ ≥ 1.5× vehicle **and** BUBR1 ≥ 25% higher **and** missegregation ≥ 25% lower | NAD⁺ rises but BUBR1 does not: abandon the NAD⁺ strategy |
+| 2. Specificity | As step 1, with *SIRT2* knockdown | BUBR1, missegregation | Effect lost without SIRT2 | Effect persists without SIRT2: mechanism is not as proposed; re-examine before step 3 |
+| 3. Safety signal | As step 1 | p53/interferon alarm genes (*CDKN1A*, interferon-stimulated genes) | Alarm intact | Alarm suppressed (flagged for niacin in LINCS): prefer NR or stop |
+| 4. Mice | BubR1 hypomorphic mice, NR in diet | BubR1 level, aneuploidy in splenocytes, tumour incidence, survival | Lower aneuploidy, no rise in tumours | Any tumour increase: stop |
+| 5. Supervised n-of-1 | Only with the child's clinicians and ethics oversight | Blood NAD⁺ (weeks), % aneuploid blood cells by interphase FISH (months), liver tests, tumour surveillance | NAD⁺ rise and stable or falling aneuploid fraction | Pre-set stop rule: adverse effects, rising aneuploidy, or any new tumour signal |
 
 ---
 
@@ -381,7 +398,7 @@ python3 ../tools/check_feature_genes.py --vcf /path/to/patient.vcf.gz --hpo <une
 ## 13. Limitations
 
 - The variant effects are predictions; protein levels in this child's cells have not been measured.
-- Mouse and human BubR1 may differ in regulation; the human K668 equivalence should be confirmed.
+- Direct evidence that NAD⁺ raises BUBR1 comes from mice; human evidence covers NAD⁺ raising and safety, not BUBR1 itself (tested first, Section 10). Mouse and human BubR1 may differ in regulation; the human K668 equivalence should be confirmed.
 - NR safety data come from a different disease and small, open-label studies.
 - Database results depend on DGIdb and Open Targets at run time; counts can change as these update.
 - LINCS signatures come from cancer cell lines and measure transcripts, not protein stability; NR and NMN are not in LINCS.
@@ -428,5 +445,7 @@ python3 ../tools/check_feature_genes.py --vcf /path/to/patient.vcf.gz --hpo <une
 30. Clinical Pharmacogenetics Implementation Consortium (CPIC) guidelines, cpicpgx.org (accessed October 2026).
 31. Rey E, et al. Thrombophilic disorders and fetal loss: a meta-analysis. *Lancet.* 2003;361(9361):901–908.
 32. Moriyama B, et al. Adverse interactions between antifungal azoles and vincristine: review and analysis of cases. *Mycoses.* 2012;55(4):290–297.
+33. Kim HS, et al. SIRT2 maintains genome integrity and suppresses tumorigenesis through regulating APC/C activity. *Cancer Cell.* 2011;20(4):487–499.
+34. Shoji M, et al. Nicotinamide riboside supplementation benefits in patients with Werner syndrome: a double-blind randomized crossover placebo-controlled trial. *Aging Cell.* 2025. doi:10.1111/acel.70093.
 
 *Data from the hackathon dataset are not reproduced here, per hackathon rules. This report is released under CC BY 4.0.*
