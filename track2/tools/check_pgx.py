@@ -48,6 +48,13 @@ SITES = [
     ("SLCO1B1", "rs4149056", "12", 21178615, "T", "C", "c.521T>C", "decreased function"),
 ]
 
+# Family-history sites (not drug response): inherited thrombophilia, a known contributor to
+# recurrent pregnancy loss. A variant in the child means one parent carries it.
+FAMILY = [
+    ("F5", "rs6025", "1", 169549811, "C", "T", "Factor V Leiden"),
+    ("F2", "rs1799963", "11", 46739505, "G", "A", "Prothrombin G20210A"),
+]
+
 DRUGS = {
     "CEP72": "vincristine (nerve damage)", "CYP3A5": "vincristine exposure", "TPMT": "thiopurines",
     "NUDT15": "thiopurines", "DPYD": "5-FU / capecitabine", "UGT1A1": "irinotecan",
@@ -94,7 +101,7 @@ def main():
     build = detect_build(a.vcf)
     if build and build != "GRCh38":
         sys.exit(f"VCF is {build}; these positions are GRCh38. Lift over first.")
-    want = {(s[2], s[3]): s for s in SITES}
+    want = {(s[2], s[3]): s for s in SITES + [f[:6] + ("", "") for f in FAMILY]}
     found, col = {}, 9
     with opener(a.vcf) as f:
         for line in f:
@@ -129,6 +136,11 @@ def main():
             for s, c in calls:
                 state = "not in VCF (presumed reference)" if (s[2], s[3]) not in found else f"{c} variant copies"
                 print(f"      [LOCAL ONLY] {s[1]} {s[6]}: {state}")
+    print("\nFamily-history check (safe to share):")
+    for gene, rs, c, pos, ref, alt, name in FAMILY:
+        n = found.get((c, pos), 0) or 0
+        print(f"  {name} ({gene}): " + ("PRESENT in the child: one parent carries it (relevant to recurrent pregnancy loss)"
+                                       if n else "absent in the child (a parent may still carry it)"))
     print("\nFor clinician review only. Share the summary lines, never genotypes or positions.")
 
 

@@ -19,7 +19,7 @@ Working backwards from his symptoms alone, our analysis independently pointed to
 
 Our Track 1 analysis identified compound heterozygous *BUB1B* variants (one truncating, one missense; exact variant identifiers are withheld from public materials). We argue that this genotype produces a **BUBR1 hypomorph**: the child's cells make some BUBR1, but too little, because one allele is null and the other encodes an unstable protein. The therapeutic goal is therefore to **stabilise the BUBR1 that remains**, while avoiding anything that weakens the mitotic checkpoint further or adds cancer risk.
 
-A systematic, gene-agnostic screen of DGIdb and Open Targets across 29 related genes found **no usable drug that targets BUB1B** and **no approved drug known to push the BUBR1-stability pathway in the right direction**; all 552 drug–gene records were excluded as harmful, wrong-direction, unsafe or investigational-with-unknown-direction, except one approved compound of unknown direction. An independent phenotype-driven analysis, starting from the patient's clinical features rather than his DNA, ranked *BUB1B* 16th of 2,479 genes and converged on the same checkpoint pathway, with no directly druggable target in the helpful direction. A third, pathway-agnostic route (LINCS L1000 signature reversal) tested the NAD⁺ hypothesis with a pre-specified statistic: support was weak and not significant (p = 0.085), and the analysis showed that naive reversal of a chromosome-instability signature favours drugs that silence the cell's protective p53/interferon alarm (93 of the top 100), which we exclude. The lead strategy is therefore **NAD⁺ repletion**, with two options: **niacin**, an approved prescription medicine that raised blood NAD⁺ up to 8-fold in humans, and **nicotinamide riboside (NR)**, a supplement with the stronger paediatric safety record. Local checks of the child's genome show that both drugs' conversion pathways are intact and flag two genetic risk factors for vincristine neuropathy, relevant to his cancer care. Variant-effect predictors support the mechanism (AlphaMissense 0.92, likely pathogenic, for the missense allele; high-confidence loss-of-function for the truncating allele). Both act on the NAD⁺ → SIRT2 → BUBR1 axis that raised BubR1 levels in mice. We expect at most a partial benefit and propose a staged validation plan before any clinical use.
+A systematic, gene-agnostic screen of DGIdb and Open Targets across 29 related genes found **no usable drug that targets BUB1B** and **no approved drug known to push the BUBR1-stability pathway in the right direction**; all 552 drug–gene records were excluded as harmful, wrong-direction, unsafe or investigational-with-unknown-direction, except one approved compound of unknown direction. An independent phenotype-driven analysis, starting from the patient's clinical features rather than his DNA, ranked *BUB1B* 16th of 2,479 genes and converged on the same checkpoint pathway, with no directly druggable target in the helpful direction. A third, pathway-agnostic route (LINCS L1000 signature reversal) tested the NAD⁺ hypothesis with a pre-specified statistic: support was weak and not significant (p = 0.085), and the analysis showed that naive reversal of a chromosome-instability signature favours drugs that silence the cell's protective p53/interferon alarm (93 of the top 100), which we exclude. The lead strategy is therefore **NAD⁺ repletion**, with two options: **niacin**, an approved prescription medicine that raised blood NAD⁺ up to 8-fold in humans, and **nicotinamide riboside (NR)**, a supplement with the stronger paediatric safety record. Local checks of the child's genome show that both drugs' conversion pathways are intact, flag two genetic risk factors for vincristine neuropathy and Factor V Leiden, and raise one possible second diagnosis (*PEX5*) that a standard blood test can confirm or exclude. Variant-effect predictors support the mechanism (AlphaMissense 0.92, likely pathogenic, for the missense allele; high-confidence loss-of-function for the truncating allele). Both act on the NAD⁺ → SIRT2 → BUBR1 axis that raised BubR1 levels in mice. We expect at most a partial benefit and propose a staged validation plan before any clinical use.
 
 ---
 
@@ -171,7 +171,26 @@ Section 2 starts from the gene. This analysis starts from the **patient's clinic
 
 **Possible second diagnosis.** The renal, perinatal and nutritional features together form the classic pattern of antenatal Bartter syndrome (a salt-wasting tubulopathy), and the phenotype scoring independently ranked two of its genes, *SLC12A1* and *KCNJ1*, first and second of all genes. Dual molecular diagnoses occur in a minority of solved cases [22]. `track2/tools/check_vcf_genes.py` checks the patient VCF **locally** for rare variants in *SLC12A1, KCNJ1, CLCNKB, BSND* and *MAGED2* and prints only gene-level verdicts. **Result (local run, 19 October 2026): no rare protein- or splice-altering variants in any of the five genes** (three rare non-coding variants, low prior). A second genetic cause of this tubulopathy type is therefore not supported by the small-variant calls, which favours an acquired explanation for the renal and perinatal features. Caveat: the VCF holds small variants only, so whole-gene deletions (a common cause of *CLCNKB*-related Bartter syndrome) and deep-intronic effects are not assessed; a copy-number review or a clinical tubular work-up remains reasonable if the history does not explain the findings. Clinical history (diuretics, chemotherapy, urinary calcium) should be reviewed first.
 
-**Family history.** The excluded family-history term has no overlap with MVA genes or *BUB1B* partners (its HPO genes are mainly coagulation genes); possible explanations include chance, parental carrier status, or maternal factors. It is a matter for genetic counselling, not a drug target for the child.
+### 3.2 Genome-wide check: is there a second genetic cause?
+
+Section 3.1 tested only the disease-gene network. To test "genetic or not" properly, `tools/check_feature_genes.py` took **every gene known to cause each of the four unexplained features** (HPO; 1,700+ genes in total, HLA genes excluded as unreliable), scanned their coding exons (MANE Select, ±10 bp) in the patient's VCF locally, and applied inheritance-aware rules: recessive genes need two rare damaging hits, dominant genes one ultra-rare hit. "Damaging" was judged on each gene's **canonical transcript** (loss-of-function, AlphaMissense likely-pathogenic missense, or a novel in-frame indel), with ClinVar-benign variants excluded. Two earlier false alarms (HLA hypervariability; frameshifts on minor transcripts) were removed by these rules.
+
+| Unexplained feature (category) | Genes scanned | Result |
+|---|---|---|
+| Renal | 106 | **No gene with a disease-consistent pattern**: a second genetic cause is not supported; acquired cause favoured |
+| Nutritional growth after birth | 1,176 | *PEX5* (homozygous, see below); *SERPINA1* (two heterozygous frameshifts of near-identical population frequency, consistent with one complex variant on the same copy; low prior) |
+| Muscle | 598 | *PEX5*; plus vincristine-neuropathy risk genotypes (Section 7.1) |
+| Perinatal | 203 | *PEX5* |
+
+**A possible second diagnosis: *PEX5*.** The patient is homozygous for a variant at the splice donor of *PEX5*'s canonical transcript, absent from gnomAD and from ClinVar. If it disrupts splicing, biallelic *PEX5* loss causes a peroxisome biogenesis disorder (Zellweger spectrum), which could link three of the four unexplained features. We report this as a **hypothesis requiring confirmation**: splice-region indels are a common calling artefact, a homozygous novel variant needs orthogonal confirmation, and the classic severe phenotype includes features not listed for this patient. It is cheap to resolve: **plasma very-long-chain fatty acids** (with plasmalogens, phytanic and pristanic acid), Sanger confirmation of the variant, and parental carrier testing. *SERPINA1* can be settled with a serum alpha-1 antitrypsin level.
+
+### 3.3 Family history: recurrent pregnancy loss
+
+The family-history term has no overlap with MVA genes or *BUB1B* partners, but the child's genome still informs it:
+- **Factor V Leiden is present in the child**, so one parent carries it. If the mother carries it, this inherited thrombophilia is a recognised contributor to recurrent pregnancy loss (prothrombin G20210A was absent in the child) [31]. Maternal thrombophilia has also been linked, inconsistently, to placental complications such as growth restriction and preterm birth, a possible contributor to the perinatal features.
+- **BUB1B carrier status:** a compound-heterozygous child implies both parents are carriers, giving a 25% recurrence risk per pregnancy; complete BubR1 loss is embryonic lethal in mice, so severely affected pregnancies could be lost.
+- Both are testable: parental Factor V Leiden and *BUB1B* carrier testing, with genetic counselling. The finding also matters for the child himself: Factor V Leiden raises venous clot risk, relevant to central lines and immobility during cancer care.
+
 
 ---
 
@@ -281,6 +300,12 @@ MVA type 1 typically involves slow growth before birth, small head size, develop
 
 *The patient-specific phenotype analysis is summarised in Section 3; individual clinical features are not reproduced in this public report.*
 
+**Drug and management considerations for the secondary features.** These are not repurposing candidates for MVA, but they follow from the analyses above:
+- **Muscle (vincristine susceptibility):** if vincristine is used, closer neuropathy monitoring; avoid strong CYP3A4 inhibitors such as azole antifungals alongside it (they raise vincristine exposure, which matters more in a *CYP3A5* non-expresser), preferring an echinocandin for antifungal cover where clinically appropriate [32].
+- **Possible *PEX5* disorder:** only if the peroxisomal blood tests confirm it, oral **cholic acid**, approved as adjunctive treatment for peroxisomal disorders including Zellweger spectrum with liver involvement, would become relevant; nutritional support is standard either way.
+- **Renal:** review loop-diuretic exposure and urinary calcium; standard nephrology management.
+- **Clotting (Factor V Leiden):** awareness during central-line use; avoid oestrogen-containing medicines later in life.
+
 ---
 
 ## 9. Notes for clinicians
@@ -296,6 +321,8 @@ These are considerations to support a clinical team's own judgement, not a proto
 - Continue the child's existing cancer surveillance exactly as before. Because raising NAD⁺ could in theory support tumour cell metabolism, any new mass or unexplained change should prompt stopping and review.
 - Use a pre-specified stop rule (adverse effects, rising aneuploidy, or no change after a defined period).
 - If niacin is chosen: monitor liver tests and expect flushing; avoid sustained-release forms at high doses.
+- Second-diagnosis work-up (Section 3.2): plasma very-long-chain fatty acids and related peroxisomal markers, Sanger confirmation of the *PEX5* variant, serum alpha-1 antitrypsin level.
+- Family (Section 3.3): parental Factor V Leiden and *BUB1B* carrier testing; genetic counselling.
 - Pharmacogenomics (Section 7.1): if vincristine is used, the child's *CEP72* and *CYP3A5* results suggest closer neuropathy monitoring; *CYP2C19* intermediate metaboliser status is relevant to PPIs and voriconazole.
 - Prefer NR or niacin over high-dose nicotinamide: at high concentrations nicotinamide inhibits sirtuins, the opposite of the intended effect.
 
@@ -339,6 +366,7 @@ python3 signature_reversal.py --genes BUB1B,CEP57,TRIP13 --config ../pipeline/co
 python3 ../tools/check_vcf_genes.py --vcf /path/to/patient.vcf.gz
 python3 ../tools/check_vcf_genes.py --vcf /path/to/patient.vcf.gz --genes NAPRT,NADSYN1,NMRK1,NMRK2,NMNAT1,NMNAT2,NMNAT3,NAMPT,SIRT2
 python3 ../tools/check_pgx.py --vcf /path/to/patient.vcf.gz
+python3 ../tools/check_feature_genes.py --vcf /path/to/patient.vcf.gz --hpo <unexplained HPO IDs> --skip-genes BUB1B,CEP57,TRIP13 --details
 ```
 
 ---
@@ -346,7 +374,7 @@ python3 ../tools/check_pgx.py --vcf /path/to/patient.vcf.gz
 ## 12. Methods and AI use
 
 - **Data used:** the hackathon case data (Track 1 genotype; patient HPO terms, processed locally) and public resources (DGIdb, Open Targets, HPO, STRING, LINCS L1000 via Enrichr, WHO ATC via ChEMBL, published literature). No subject data are reproduced in this report or the repository.
-- **Code:** `track2/pipeline/repurpose.py` (gene-first screen) and `track2/phenotype/phenotype.py` (phenotype-first analysis; patient HPO terms are read from a local, git-ignored file), `track2/lincs/signature_reversal.py` (transcriptome-first route) `track2/tools/check_vcf_genes.py` (local gene-panel checks: second diagnosis, NAD⁺ conversion genes) and `track2/tools/check_pgx.py` (local pharmacogenomic check); configs in `track2/pipeline/config/`; every run writes a provenance file recording sources, configuration and gene set.
+- **Code:** `track2/pipeline/repurpose.py` (gene-first screen) and `track2/phenotype/phenotype.py` (phenotype-first analysis; patient HPO terms are read from a local, git-ignored file), `track2/lincs/signature_reversal.py` (transcriptome-first route) `track2/tools/check_vcf_genes.py` (local gene-panel checks: second diagnosis, NAD⁺ conversion genes) , `track2/tools/check_pgx.py` (local pharmacogenomic and family-history check) and `track2/tools/check_feature_genes.py` (local genome-wide second-diagnosis scan); configs in `track2/pipeline/config/`; every run writes a provenance file recording sources, configuration and gene set.
 - **AI assistance:** Anthropic, Claude Opus 5.5 via claude.ai, Max plan; "Help improve Claude" setting **[OFF]**. Used for literature triage, drafting text and writing pipeline code; all references and outputs were checked by the team. The patient's HPO term IDs were entered into the assistant; no VCF, clinical document or other case files were uploaded, and the second-diagnosis VCF check was run locally.
 
 ## 13. Limitations
@@ -357,6 +385,7 @@ python3 ../tools/check_pgx.py --vcf /path/to/patient.vcf.gz
 - Database results depend on DGIdb and Open Targets at run time; counts can change as these update.
 - LINCS signatures come from cancer cell lines and measure transcripts, not protein stability; NR and NMN are not in LINCS.
 - Niacin was not in the pre-specified LINCS hypothesis; its strong reversal score is exploratory, and the post-hoc group p-value (0.024) is not corrected for that choice.
+- The genome-wide scan covers coding exons and canonical splice regions of known disease genes only; deep-intronic, structural and copy-number variants were not assessed, and two heterozygous variants cannot be phased without parental data.
 - The genetic-or-not classification uses HPO annotations, which are incomplete; "secondary" and "acquired" are hypotheses pending the clinical history.
 
 **Future work.** Align the raw reads (not used here) to review copy number across the tubulopathy genes (especially *CLCNKB* deletions) and *CYP2D6*, if the clinical history does not explain the renal features; test niacin, NR and the exploratory division-restoring compounds side by side in patient cells (Section 10).
@@ -396,5 +425,7 @@ python3 ../tools/check_pgx.py --vcf /path/to/patient.vcf.gz
 28. Diouf B, et al. Association of an inherited genetic variant with vincristine-related peripheral neuropathy in children with acute lymphoblastic leukemia. *JAMA.* 2015;313(8):815–823.
 29. Egbelakin A, et al. Increased risk of vincristine neurotoxicity associated with low CYP3A5 expression genotype in children with acute lymphoblastic leukemia. *Pediatr Blood Cancer.* 2011;56(3):361–367.
 30. Clinical Pharmacogenetics Implementation Consortium (CPIC) guidelines, cpicpgx.org (accessed October 2026).
+31. Rey E, et al. Thrombophilic disorders and fetal loss: a meta-analysis. *Lancet.* 2003;361(9361):901–908.
+32. Moriyama B, et al. Adverse interactions between antifungal azoles and vincristine: review and analysis of cases. *Mycoses.* 2012;55(4):290–297.
 
 *Data from the hackathon dataset are not reproduced here, per hackathon rules. This report is released under CC BY 4.0.*
