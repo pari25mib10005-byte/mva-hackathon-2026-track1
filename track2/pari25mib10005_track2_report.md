@@ -312,7 +312,7 @@ python3 ../tools/check_vcf_genes.py --vcf /path/to/patient.vcf.gz
 
 - **Data used:** the hackathon case data (Track 1 genotype; patient HPO terms, processed locally) and public resources (DGIdb, Open Targets, HPO, STRING, LINCS L1000 via Enrichr, WHO ATC via ChEMBL, published literature). No subject data are reproduced in this report or the repository.
 - **Code:** `track2/pipeline/repurpose.py` (gene-first screen) and `track2/phenotype/phenotype.py` (phenotype-first analysis; patient HPO terms are read from a local, git-ignored file), `track2/lincs/signature_reversal.py` (transcriptome-first route) and `track2/tools/check_vcf_genes.py` (local second-diagnosis check); configs in `track2/pipeline/config/`; every run writes a provenance file recording sources, configuration and gene set.
-- **AI assistance:** Anthropic, Claude Opus 5.5 via claude.ai, Max plan; "Help improve Claude" setting **off**. Used for literature triage, drafting text and writing pipeline code; all references and outputs were checked by the team. The patient's HPO term IDs were entered into the assistant; no VCF, clinical document or other case files were uploaded, and the second-diagnosis VCF check was run locally.
+- **AI assistance:** Anthropic, Claude Opus 5.5 via claude.ai, Max plan; "Help improve Claude" setting **[OFF]**. Used for literature triage, drafting text and writing pipeline code; all references and outputs were checked by the team. The patient's HPO term IDs were entered into the assistant; no VCF, clinical document or other case files were uploaded, and the second-diagnosis VCF check was run locally.
 
 ## 13. Limitations
 
