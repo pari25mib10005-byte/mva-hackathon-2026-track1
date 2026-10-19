@@ -188,7 +188,8 @@ Section 3.1 tested only the disease-gene network. To test "genetic or not" prope
 
 The family-history term has no overlap with MVA genes or *BUB1B* partners, but the child's genome still informs it:
 - **Factor V Leiden is present in the child**, so one parent carries it. If the mother carries it, this inherited thrombophilia is a recognised contributor to recurrent pregnancy loss (prothrombin G20210A was absent in the child) [31]. Maternal thrombophilia has also been linked, inconsistently, to placental complications such as growth restriction and preterm birth, a possible contributor to the perinatal features.
-- **BUB1B carrier status:** a compound-heterozygous child implies both parents are carriers, giving a 25% recurrence risk per pregnancy; complete BubR1 loss is embryonic lethal in mice, so severely affected pregnancies could be lost.
+- **BUB1B carrier status:** a compound-heterozygous child implies both parents are carriers, giving a 25% recurrence risk per pregnancy. An affected pregnancy would carry the same two alleles as the child, whose survival shows this genotype is compatible with life, so *BUB1B* sets the recurrence risk but is an unlikely cause of the losses themselves.
+- **Common non-genetic causes remain the most likely overall:** chance chromosome errors in the embryo, antiphospholipid syndrome (the most treatable cause) and uterine factors; a standard recurrent-pregnancy-loss work-up for the mother addresses these.
 - Both are testable: parental Factor V Leiden and *BUB1B* carrier testing, with genetic counselling. The finding also matters for the child himself: Factor V Leiden raises venous clot risk, relevant to central lines and immobility during cancer care.
 
 
@@ -322,7 +323,7 @@ These are considerations to support a clinical team's own judgement, not a proto
 - Use a pre-specified stop rule (adverse effects, rising aneuploidy, or no change after a defined period).
 - If niacin is chosen: monitor liver tests and expect flushing; avoid sustained-release forms at high doses.
 - Second-diagnosis work-up (Section 3.2): plasma very-long-chain fatty acids and related peroxisomal markers, Sanger confirmation of the *PEX5* variant, serum alpha-1 antitrypsin level.
-- Family (Section 3.3): parental Factor V Leiden and *BUB1B* carrier testing; genetic counselling.
+- Family (Section 3.3): parental Factor V Leiden and *BUB1B* carrier testing; a recurrent-pregnancy-loss work-up for the mother (including antiphospholipid antibodies); genetic counselling.
 - Pharmacogenomics (Section 7.1): if vincristine is used, the child's *CEP72* and *CYP3A5* results suggest closer neuropathy monitoring; *CYP2C19* intermediate metaboliser status is relevant to PPIs and voriconazole.
 - Prefer NR or niacin over high-dose nicotinamide: at high concentrations nicotinamide inhibits sirtuins, the opposite of the intended effect.
 
