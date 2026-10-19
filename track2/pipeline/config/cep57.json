@@ -1,0 +1,11 @@
+{
+  "gene": "CEP57",
+  "extends": "cin_exclusions.json",
+  "mode": "loss_of_function",
+  "modifiers": {},
+  "network": {
+    "max_neighbours": 25,
+    "min_score": 0.9
+  },
+  "curated_candidates": []
+}

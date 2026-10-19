@@ -1,0 +1,402 @@
+{
+  "gene": "BUB1B",
+  "ensembl": "ENSG00000156970",
+  "run_utc": "2026-10-19T13:36:16.960807Z",
+  "sources": {
+    "open_targets": "https://api.platform.opentargets.org/api/v4/graphql",
+    "dgidb": "https://dgidb.org/api/graphql"
+  },
+  "config": {
+    "mode": "loss_of_function",
+    "modifiers": {
+      "SIRT2": {
+        "want": "up",
+        "weight": 0.9,
+        "why": "deacetylates BUBR1 K668, protecting it from degradation"
+      },
+      "NAMPT": {
+        "want": "up",
+        "weight": 0.8,
+        "why": "rate-limiting NAD+ salvage enzyme feeding SIRT2"
+      },
+      "CREBBP": {
+        "want": "down",
+        "weight": 0.4,
+        "why": "acetylates BUBR1 K668 (promotes its loss); activators are harmful",
+        "propose": false,
+        "no_propose_why": "CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators"
+      },
+      "EP300": {
+        "want": "down",
+        "weight": 0.4,
+        "why": "CBP paralogue; same rationale",
+        "propose": false,
+        "no_propose_why": "CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators"
+      }
+    },
+    "network": {
+      "max_neighbours": 25,
+      "min_score": 0.9
+    },
+    "exclude_targets": [
+      "AURKA",
+      "AURKB",
+      "AURKC",
+      "BUB1",
+      "BUB3",
+      "CCNB1",
+      "CDK1",
+      "CENPE",
+      "HSP90AA1",
+      "HSP90AB1",
+      "KIF11",
+      "MAD2L1",
+      "PARP1",
+      "PARP2",
+      "PLK1",
+      "PLK4",
+      "POLA1",
+      "POLE",
+      "POLE2",
+      "PPP2CA",
+      "PPP2CB",
+      "PPP2R1A",
+      "PPP2R5A",
+      "PPP2R5C",
+      "PSMB1",
+      "PSMB2",
+      "PSMB5",
+      "PSMB8",
+      "RRM1",
+      "RRM2",
+      "TOP1",
+      "TOP2A",
+      "TOP2B",
+      "TTK",
+      "TUBA1A",
+      "TUBA4A",
+      "TUBB",
+      "TUBB1",
+      "TUBB3",
+      "TYMS"
+    ],
+    "exclude_mechanism_keywords": [
+      "alkylat",
+      "aurora",
+      "cross-link",
+      "cyclin-dependent kinase 1",
+      "dna polymerase",
+      "dna synthesis",
+      "heat shock protein hsp 90",
+      "hsp 90",
+      "intercalat",
+      "kinesin",
+      "phosphatase 2a",
+      "polo-like",
+      "poly [adp-ribose] polymerase",
+      "proteasome",
+      "ribonucleotide reductase",
+      "thymidylate synthase",
+      "topoisomerase",
+      "tubulin"
+    ],
+    "curated_candidates": [
+      {
+        "drug": "Nicotinamide riboside",
+        "gene": "SIRT2/NAD+",
+        "stage": "SUPPLEMENT",
+        "action": "NAD+ precursor",
+        "direction": "up (matches)",
+        "score": 0.95,
+        "mechanism": "Raises NAD+ -> SIRT2 deacetylation of BUBR1 K668 -> less degradation",
+        "refs": [
+          "North BJ et al., EMBO J 2014 (SIRT2/NMN raise BubR1 in mice)",
+          "NR open-label studies in ataxia-telangiectasia incl. children (VERIFY citation)"
+        ]
+      },
+      {
+        "drug": "Nicotinamide mononucleotide",
+        "gene": "SIRT2/NAD+",
+        "stage": "SUPPLEMENT",
+        "action": "NAD+ precursor",
+        "direction": "up (matches)",
+        "score": 0.85,
+        "mechanism": "Same axis as NR; directly tested in BubR1 mice",
+        "refs": [
+          "North BJ et al., EMBO J 2014"
+        ]
+      },
+      {
+        "drug": "Nicotinamide",
+        "gene": "SIRT2/NAD+",
+        "stage": "APPROVAL",
+        "action": "NAD+ precursor",
+        "direction": "up at low dose; sirtuin-inhibitory at high conc. (CAUTION)",
+        "score": 0.65,
+        "mechanism": "Indirect by analogy to NR/NMN",
+        "refs": [
+          "analogy; no BubR1-specific study"
+        ]
+      },
+      {
+        "drug": "N-acetylcysteine",
+        "gene": "downstream",
+        "stage": "APPROVAL",
+        "action": "antioxidant",
+        "direction": "n/a",
+        "score": 0.45,
+        "mechanism": "Low-BubR1 cells more sensitive to oxidative stress",
+        "refs": [
+          "VERIFY source"
+        ]
+      },
+      {
+        "drug": "Dasatinib + quercetin",
+        "gene": "downstream",
+        "stage": "APPROVAL (dasatinib)",
+        "action": "senolytic",
+        "direction": "n/a",
+        "score": 0.25,
+        "mechanism": "Clears senescent cells; reserve only (cytotoxic kinase inhibitor)",
+        "refs": [
+          "Baker DJ et al., Nature 2011 (p16 senescent-cell clearance in BubR1 hypomorphs)"
+        ]
+      }
+    ],
+    "gene": "BUB1B",
+    "extends": "cin_exclusions.json",
+    "_mechanism": "Compound-heterozygous BUBR1 hypomorph (one truncating + one kinase-domain missense allele): residual BUBR1 is low; goal is to raise/stabilise it and never weaken the SAC further.",
+    "lincs": {
+      "_about": "Signature-reversal settings. Alarm genes = p53/apoptosis/interferon genes; drugs that switch them off are flagged (they would let aneuploid cells survive). Top-level exclude_patterns and known_mechanisms also apply.",
+      "alarm_genes": [
+        "CDKN1A",
+        "GDF15",
+        "MDM2",
+        "BAX",
+        "BID",
+        "ATF3",
+        "DDIT4",
+        "FAS",
+        "TP53I3",
+        "SESN1",
+        "SESN2",
+        "DDB2",
+        "XPC",
+        "RRM2B",
+        "ZMAT3",
+        "TNFRSF10B",
+        "PLK3",
+        "FDXR",
+        "AEN",
+        "BBC3",
+        "PMAIP1",
+        "TP53INP1",
+        "GADD45A",
+        "ISG15",
+        "IFI6",
+        "IFI44",
+        "IFI44L",
+        "IFIT1",
+        "IFIT2",
+        "IFIT3",
+        "IRF7",
+        "MX1",
+        "OAS1",
+        "OAS2",
+        "STAT1",
+        "IFI27",
+        "BST2"
+      ],
+      "alarm_suppression_min": 3
+    },
+    "exclude_patterns": [
+      [
+        "sirtuin",
+        "inhibitor"
+      ],
+      [
+        "nicotinamide phosphoribosyltransferase",
+        "inhibitor"
+      ],
+      [
+        "nampt",
+        "inhibitor"
+      ],
+      [
+        "janus kinase",
+        "inhibitor"
+      ],
+      [
+        "p53",
+        "inhibitor"
+      ]
+    ],
+    "known_mechanisms": {
+      "_about": "Curated mechanisms for research compounds that DGIdb/Open Targets do not annotate (from vendor/literature descriptions); used only to EXCLUDE wrong-direction agents.",
+      "SALERMIDE": "NAD-dependent deacetylase sirtuin inhibitor",
+      "SIRTINOL": "NAD-dependent deacetylase sirtuin inhibitor",
+      "TENOVIN-1": "NAD-dependent deacetylase sirtuin inhibitor",
+      "AGK2": "NAD-dependent deacetylase sirtuin inhibitor",
+      "CAMBINOL": "NAD-dependent deacetylase sirtuin inhibitor",
+      "EX-527": "NAD-dependent deacetylase sirtuin inhibitor",
+      "SELISISTAT": "NAD-dependent deacetylase sirtuin inhibitor",
+      "STF-31": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+      "CHS-828": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+      "STF-118804": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+      "NAMPT INHIBITOR STF-118804": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+      "APO-866": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+      "FK-866": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+      "GNE-617": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+      "TEGLARINAD CHLORIDE": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+      "DAPORINAD": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+      "PADNARSERTIB": "PAK4 and Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor"
+    }
+  },
+  "gene_set": {
+    "BUB1B": {
+      "id": "ENSG00000156970",
+      "weight": 1.0,
+      "role": "index"
+    },
+    "SIRT2": {
+      "id": "ENSG00000068903",
+      "weight": 0.9,
+      "role": "modifier (want up): deacetylates BUBR1 K668, protecting it from degradation"
+    },
+    "NAMPT": {
+      "id": "ENSG00000105835",
+      "weight": 0.8,
+      "role": "modifier (want up): rate-limiting NAD+ salvage enzyme feeding SIRT2"
+    },
+    "CREBBP": {
+      "id": "ENSG00000005339",
+      "weight": 0.4,
+      "role": "modifier (want down): acetylates BUBR1 K668 (promotes its loss); activators are harmful"
+    },
+    "EP300": {
+      "id": "ENSG00000100393",
+      "weight": 0.4,
+      "role": "modifier (want down): CBP paralogue; same rationale"
+    },
+    "BUB3": {
+      "id": "ENSG00000154473",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "KNL1": {
+      "id": "ENSG00000137812",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "CDC20": {
+      "id": "ENSG00000117399",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "AURKB": {
+      "id": "ENSG00000178999",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "ANAPC2": {
+      "id": "ENSG00000176248",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "CDC27": {
+      "id": "ENSG00000004897",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "CDC23": {
+      "id": "ENSG00000094880",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "ANAPC10": {
+      "id": "ENSG00000164162",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "CENPE": {
+      "id": "ENSG00000138778",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "CENPF": {
+      "id": "ENSG00000117724",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "ANAPC7": {
+      "id": "ENSG00000196510",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "PLK1": {
+      "id": "ENSG00000166851",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "MAD2L1": {
+      "id": "ENSG00000164109",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "NEK2": {
+      "id": "ENSG00000117650",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "CDK1": {
+      "id": "ENSG00000170312",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "ANAPC4": {
+      "id": "ENSG00000053900",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "BUB1": {
+      "id": "ENSG00000169679",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "CDC16": {
+      "id": "ENSG00000130177",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "ANAPC1": {
+      "id": "ENSG00000153107",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.999)"
+    },
+    "CCNB1": {
+      "id": "ENSG00000134057",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.998)"
+    },
+    "ANAPC5": {
+      "id": "ENSG00000089053",
+      "weight": 0.499,
+      "role": "STRING neighbour (0.998)"
+    },
+    "PPP2CA": {
+      "id": "ENSG00000113575",
+      "weight": 0.498,
+      "role": "STRING neighbour (0.997)"
+    },
+    "ZWINT": {
+      "id": "ENSG00000122952",
+      "weight": 0.498,
+      "role": "STRING neighbour (0.996)"
+    },
+    "CDCA8": {
+      "id": "ENSG00000134690",
+      "weight": 0.497,
+      "role": "STRING neighbour (0.994)"
+    }
+  }
+}

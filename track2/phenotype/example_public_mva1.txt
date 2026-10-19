@@ -1,0 +1,7 @@
+# PUBLIC example only: typical MVA type 1 features (MedlinePlus / HPO), NOT patient data.
+# Put the patient's own terms in a separate local file that is NOT committed (see .gitignore).
+# Mark family-history terms with "# family".
+HP:0000252
+HP:0001511
+HP:0002667
+HP:0004322

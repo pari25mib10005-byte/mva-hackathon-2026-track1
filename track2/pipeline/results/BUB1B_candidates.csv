@@ -1,0 +1,7 @@
+rank,drug,score,gene,role,stage,action,direction,mechanism,evidence_layer,source
+1,NICOTINAMIDE RIBOSIDE,0.95,SIRT2/NAD+,curated,SUPPLEMENT,NAD+ precursor,up (matches),Raises NAD+ -> SIRT2 deacetylation of BUBR1 K668 -> less degradation,literature (not in drug–target DBs),"North BJ et al., EMBO J 2014 (SIRT2/NMN raise BubR1 in mice); NR open-label studies in ataxia-telangiectasia incl. children (VERIFY citation)"
+2,NICOTINAMIDE MONONUCLEOTIDE,0.85,SIRT2/NAD+,curated,SUPPLEMENT,NAD+ precursor,up (matches),Same axis as NR; directly tested in BubR1 mice,literature (not in drug–target DBs),"North BJ et al., EMBO J 2014"
+3,NICOTINAMIDE,0.65,SIRT2/NAD+,curated,APPROVAL,NAD+ precursor,up at low dose; sirtuin-inhibitory at high conc. (CAUTION),Indirect by analogy to NR/NMN,literature (not in drug–target DBs),analogy; no BubR1-specific study
+4,NITRIC OXIDE,0.63,NAMPT,modifier (want up): rate-limiting NAD+ salvage enzyme feeding SIRT2,APPROVAL,,direction unknown (want up),Soluble guanylate cyclase activator,database,DGIdb:ClinPGx
+5,N-ACETYLCYSTEINE,0.45,downstream,curated,APPROVAL,antioxidant,n/a,Low-BubR1 cells more sensitive to oxidative stress,literature (not in drug–target DBs),VERIFY source
+6,DASATINIB + QUERCETIN,0.25,downstream,curated,APPROVAL (dasatinib),senolytic,n/a,Clears senescent cells; reserve only (cytotoxic kinase inhibitor),literature (not in drug–target DBs),"Baker DJ et al., Nature 2011 (p16 senescent-cell clearance in BubR1 hypomorphs)"

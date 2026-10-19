@@ -1,0 +1,552 @@
+drug,gene,source,reason
+AT-9283,AURKB,OpenTargets,"acts on excluded target(s) AURKA,AURKB"
+ENMD-2076,AURKB,OpenTargets,"acts on excluded target(s) AURKA,AURKB"
+KW-2449,AURKB,OpenTargets,"acts on excluded target(s) AURKA,AURKB"
+PF-03814735,AURKB,OpenTargets,"acts on excluded target(s) AURKA,AURKB"
+AMG-900,AURKB,OpenTargets,"acts on excluded target(s) AURKA,AURKB,AURKC"
+CENISERTIB,AURKB,OpenTargets,"acts on excluded target(s) AURKA,AURKB,AURKC"
+CYC-116,AURKB,OpenTargets,"acts on excluded target(s) AURKA,AURKB,AURKC"
+DANUSERTIB,AURKB,OpenTargets,"acts on excluded target(s) AURKA,AURKB,AURKC"
+ILORASERTIB,AURKB,OpenTargets,"acts on excluded target(s) AURKA,AURKB,AURKC"
+MK-6592,AURKB,OpenTargets,"acts on excluded target(s) AURKA,AURKB,AURKC"
+SNS-314,AURKB,OpenTargets,"acts on excluded target(s) AURKA,AURKB,AURKC"
+TOZASERTIB,AURKB,OpenTargets,"acts on excluded target(s) AURKA,AURKB,AURKC"
+TTP-607,AURKB,OpenTargets,"acts on excluded target(s) AURKA,AURKB,AURKC"
+"(3Z)-N,N-DIMETHYL-2-OXO-3-(4,5,6,7-TETRAHYDRO-1H-INDOL-2-YLMETHYLIDENE)-2,3-DIHYDRO-1H-INDOLE-5-SULFONAMIDE",AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+ALISERTIB,AURKB,"DGIdb:CIViC,DTC",acts on excluded target(s) AURKB
+AMG-900,AURKB,"DGIdb:ChEMBL,ClearityFoundationClinicalTrial,Drug Repurposing Hub,GuideToPharmacology,MyCancerGenome,TALC",acts on excluded target(s) AURKB
+AR-AO-14418,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+AT-9283,AURKB,"DGIdb:Drug Repurposing Hub,GuideToPharmacology",acts on excluded target(s) AURKB
+AT-9283,AURKB,DGIdb:ChEMBL,acts on excluded target(s) AURKB
+AT9283,AURKB,"DGIdb:MyCancerGenome,TALC,TTD,TdgClinicalTrial",acts on excluded target(s) AURKB
+AURORA B/C KINASE INHIBITOR GSK1070916A,AURKB,DGIdb:TTD,acts on excluded target(s) AURKB
+AURORA KINASE INHIBITOR AMG 900,AURKB,DGIdb:TTD,acts on excluded target(s) AURKB
+AURORA KINASE INHIBITOR II,AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+BARASERTIB,AURKB,OpenTargets,acts on excluded target(s) AURKB
+BARASERTIB,AURKB,"DGIdb:CIViC,ChEMBL,DTC,Drug Repurposing Hub,GuideToPharmacology,MyCancerGenome,TALC",acts on excluded target(s) AURKB
+BARASERTIB-HQPA,AURKB,"DGIdb:DTC,Drug Repurposing Hub,GuideToPharmacology,TTD",acts on excluded target(s) AURKB
+BAY 61-3606,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+BELUMOSUDIL,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+BI-811283,AURKB,OpenTargets,acts on excluded target(s) AURKB
+BI-811283,AURKB,"DGIdb:ChEMBL,TTD",acts on excluded target(s) AURKB
+BI-847325,AURKB,"DGIdb:Drug Repurposing Hub,MyCancerGenome,TTD",acts on excluded target(s) AURKB
+BMS-345541,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+BMS-754807,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+BX-795,AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+CDK2 INHIBITOR IV,AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+CEDIRANIB,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+CENISERTIB,AURKB,"DGIdb:Drug Repurposing Hub,GuideToPharmacology,MyCancerGenome,TALC,TTD,TdgClinicalTrial",acts on excluded target(s) AURKB
+CENISERTIB,AURKB,DGIdb:ChEMBL,acts on excluded target(s) AURKB
+CHEMBL:CHEMBL379975,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+CHEMBL:CHEMBL535331,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+CHEMBL:CHEMBL546797,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+COMPOUND 1 [PMID: 21742770],AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+COMPOUND 10 [PMID: 19402633],AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+COMPOUND 25 [PMID: 20855207],AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+COMPOUND 38 [PMID: 20817473],AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+COMPOUND 46 [PMID: 16451062],AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+COPANLISIB,AURKB,DGIdb:CIViC,acts on excluded target(s) AURKB
+CP-547632,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+CYC-116,AURKB,"DGIdb:ChEMBL,DTC",acts on excluded target(s) AURKB
+CYC116,AURKB,"DGIdb:Drug Repurposing Hub,TALC,TTD,TdgClinicalTrial",acts on excluded target(s) AURKB
+DACTOLISIB,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+DANUSERTIB,AURKB,"DGIdb:ChEMBL,Drug Repurposing Hub,GuideToPharmacology,MyCancerGenome,TALC,TTD",acts on excluded target(s) AURKB
+DASATINIB ANHYDROUS,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+DOVITINIB,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+DUBERMATINIB,AURKB,"DGIdb:Drug Repurposing Hub,GuideToPharmacology",acts on excluded target(s) AURKB
+ENMD-2076,AURKB,DGIdb:ChEMBL,acts on excluded target(s) AURKB
+ENTRECTINIB,AURKB,"DGIdb:DTC,Drug Repurposing Hub",acts on excluded target(s) AURKB
+EP-0042,AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+ERLOTINIB,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+EUPATORIN,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+FASUDIL,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+FISETIN,AURKB,DGIdb:Drug Repurposing Hub,acts on excluded target(s) AURKB
+G&OUML; 6976,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+GSK1070916,AURKB,"DGIdb:ChEMBL,Drug Repurposing Hub,GuideToPharmacology,MyCancerGenome,TALC,TTD",acts on excluded target(s) AURKB
+GSK2334470,AURKB,"DGIdb:Drug Repurposing Hub,GuideToPharmacology",acts on excluded target(s) AURKB
+GSK2646264,AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+GSK269962A,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+GW441756X,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+HESPERADIN,AURKB,DGIdb:Drug Repurposing Hub,acts on excluded target(s) AURKB
+HESPERADIN,AURKB,"DGIdb:DTC,GuideToPharmacology",acts on excluded target(s) AURKB
+HESPERIDIN,AURKB,DGIdb:Drug Repurposing Hub,acts on excluded target(s) AURKB
+IBCASERTIB,AURKB,OpenTargets,acts on excluded target(s) AURKB
+IBCASERTIB,AURKB,DGIdb:ChEMBL,acts on excluded target(s) AURKB
+IBCASERTIB,AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+ILORASERTIB,AURKB,"DGIdb:ChEMBL,DTC,GuideToPharmacology,TTD",acts on excluded target(s) AURKB
+JNJ-7706621,AURKB,"DGIdb:DTC,Drug Repurposing Hub,GuideToPharmacology",acts on excluded target(s) AURKB
+KENPAULLONE,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+KW-2449,AURKB,"DGIdb:ChEMBL,Drug Repurposing Hub,GuideToPharmacology",acts on excluded target(s) AURKB
+LAPATINIB,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+LAS38096,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+LDC1267,AURKB,DGIdb:Drug Repurposing Hub,acts on excluded target(s) AURKB
+LINIFANIB,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+MK-5108,AURKB,"DGIdb:Drug Repurposing Hub,TTD",acts on excluded target(s) AURKB
+MK-5108,AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+MK-6592,AURKB,DGIdb:ChEMBL,acts on excluded target(s) AURKB
+MLN-8054,AURKB,"DGIdb:DTC,GuideToPharmacology",acts on excluded target(s) AURKB
+MNK1 INHIBITOR,AURKB,DGIdb:Drug Repurposing Hub,acts on excluded target(s) AURKB
+NERVIANO,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+NIK INHIBITOR 12F,AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+NVP-TAE684,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+ORANTINIB,AURKB,DGIdb:Drug Repurposing Hub,acts on excluded target(s) AURKB
+PAZOPANIB,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+PD166285,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+PF-03814735,AURKB,DGIdb:ChEMBL,acts on excluded target(s) AURKB
+PF-03814735,AURKB,"DGIdb:Drug Repurposing Hub,MyCancerGenome,TALC",acts on excluded target(s) AURKB
+PF-562271,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+PHA-680632,AURKB,DGIdb:Drug Repurposing Hub,acts on excluded target(s) AURKB
+REVERSINE,AURKB,DGIdb:Drug Repurposing Hub,acts on excluded target(s) AURKB
+SNS-314,AURKB,DGIdb:ChEMBL,acts on excluded target(s) AURKB
+SNS-314,AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+SNS-314,AURKB,"DGIdb:Drug Repurposing Hub,MyCancerGenome,TTD,TdgClinicalTrial",acts on excluded target(s) AURKB
+SORAFENIB,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+SP-600125,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+TAK-632,AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+TAK-901,AURKB,OpenTargets,acts on excluded target(s) AURKB
+TAK-901,AURKB,DGIdb:ChEMBL,acts on excluded target(s) AURKB
+TAK-901,AURKB,"DGIdb:Drug Repurposing Hub,TTD",acts on excluded target(s) AURKB
+TINENGOTINIB,AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+TOZASERTIB,AURKB,"DGIdb:ChEMBL,DTC,Drug Repurposing Hub,GuideToPharmacology,TALC,TdgClinicalTrial",acts on excluded target(s) AURKB
+TOZASERTIB LACTATE,AURKB,DGIdb:TTD,acts on excluded target(s) AURKB
+TTP-607,AURKB,DGIdb:ChEMBL,acts on excluded target(s) AURKB
+VANDETANIB,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+VIC 1911,AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+WITHAFERIN A,AURKB,DGIdb:DTC,acts on excluded target(s) AURKB
+XMD-12,AURKB,DGIdb:GuideToPharmacology,acts on excluded target(s) AURKB
+ZM447439,AURKB,"DGIdb:DTC,Drug Repurposing Hub,GuideToPharmacology",acts on excluded target(s) AURKB
+GSK-1070916,AURKB,OpenTargets,"acts on excluded target(s) AURKB,AURKC"
+BAY-320,BUB1,DGIdb:GuideToPharmacology,acts on excluded target(s) BUB1
+BAY-524,BUB1,DGIdb:GuideToPharmacology,acts on excluded target(s) BUB1
+COMPOUND 2-1-1 [PMID: 24900824],BUB1,DGIdb:GuideToPharmacology,acts on excluded target(s) BUB1
+COMPOUND 2-13-1 [PMID: 24900824],BUB1,DGIdb:GuideToPharmacology,acts on excluded target(s) BUB1
+COMPOUND 2-3-1 [PMID: 24900824],BUB1,DGIdb:GuideToPharmacology,acts on excluded target(s) BUB1
+COMPOUND 2-3-2 [PMID: 24900824],BUB1,DGIdb:GuideToPharmacology,acts on excluded target(s) BUB1
+1-AZAKENPAULLONE,CCNB1,DGIdb:Drug Repurposing Hub,acts on excluded target(s) CCNB1
+AZD5438,CCNB1,DGIdb:Drug Repurposing Hub,acts on excluded target(s) CCNB1
+KENPAULLONE,CCNB1,"DGIdb:Drug Repurposing Hub,TTD",acts on excluded target(s) CCNB1
+MIDOSTAURIN,CCNB1,DGIdb:Drug Repurposing Hub,acts on excluded target(s) CCNB1
+PROTOAPIGENONE,CCNB1,DGIdb:DTC,acts on excluded target(s) CCNB1
+SELICICLIB,CCNB1,DGIdb:DTC,acts on excluded target(s) CCNB1
+(2R)-2-({9-(1-METHYLETHYL)-6-[(4-PYRIDIN-2-YLBENZYL)AMINO]-9H-PURIN-2-YL}AMINO)BUTAN-1-OL,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+"(7S)-2-(2-AMINOPYRIMIDIN-4-YL)-7-(2-FLUOROETHYL)-1,5,6,7-TETRAHYDRO-4H-PYRROLO[3,2-C]PYRIDIN-4-ONE",CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+(RS)-ROSCOVITINE,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+(S)-CR8,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+1-AZAKENPAULLONE,CDK1,"DGIdb:Drug Repurposing Hub,GuideToPharmacology",acts on excluded target(s) CDK1
+2-({6-[(3-CHLOROPHENYL)AMINO]-9-ISOPROPYL-9H-PURIN-2-YL}AMINO)ETHANOL,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+6-BROMOINDIRUBIN-3'-OXIME,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+"6-PHENYL[5H]PYRROLO[2,3-B]PYRAZINE",CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+7-HYDROXYSTAUROSPORINE,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+7-HYDROXYSTAUROSPORINE,CDK1,DGIdb:Drug Repurposing Hub,acts on excluded target(s) CDK1
+AG-24322,CDK1,OpenTargets,acts on excluded target(s) CDK1
+AG-24322,CDK1,DGIdb:ChEMBL,acts on excluded target(s) CDK1
+ALSTERPAULLONE,CDK1,"DGIdb:DTC,GuideToPharmacology",acts on excluded target(s) CDK1
+ALSTERPAULLONE 2-CYANOETHYL,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+ALVOCIDIB,CDK1,OpenTargets,acts on excluded target(s) CDK1
+ALVOCIDIB,CDK1,"DGIdb:ChEMBL,Drug Repurposing Hub,MyCancerGenome,TdgClinicalTrial",acts on excluded target(s) CDK1
+AMINOPURVALANOL A,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+ARUNCIN B,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+ASNUCICLIB,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+AT-7519,CDK1,OpenTargets,acts on excluded target(s) CDK1
+AT-7519,CDK1,DGIdb:Drug Repurposing Hub,acts on excluded target(s) CDK1
+AT-7519,CDK1,"DGIdb:ChEMBL,DTC,GuideToPharmacology",acts on excluded target(s) CDK1
+AZD-1080,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+AZD-5438,CDK1,OpenTargets,acts on excluded target(s) CDK1
+AZD5438,CDK1,"DGIdb:ChEMBL,Drug Repurposing Hub,GuideToPharmacology",acts on excluded target(s) CDK1
+BAY 11-7082,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+BAY 61-3606,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+BMS-265246,CDK1,"DGIdb:Drug Repurposing Hub,GuideToPharmacology",acts on excluded target(s) CDK1
+BMS-345541,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+BMS-387032,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+BOHEMINE,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+BS-194,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+CDK INHIBITOR 4.35,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+CDK1 INHIBITOR,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+CDK1/2/4 INHIBITOR AG-024322,CDK1,DGIdb:TTD,acts on excluded target(s) CDK1
+CDK1/5 INHIBITOR,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+CDK2 INHIBITOR III,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+CDK2 INHIBITOR IV,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+CDK4 INHIBITOR,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+CENISERTIB,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+CGP74514A,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+CHEMBL:CHEMBL1082552,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+CHEMBL:CHEMBL303958,CDK1,DGIdb:Drug Repurposing Hub,acts on excluded target(s) CDK1
+CHEMBL:CHEMBL578061,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+CINNARIZINE,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+CLOFIBRATE,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+CLOTRIMAZOLE,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+COMPOUND 5G [PMID: 36385925],CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+COMPOUND 8 [PMID: 17480064],CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+COMPOUND 9B [PMID: 18986805],CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+CYC-116,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+DINACICLIB,CDK1,OpenTargets,acts on excluded target(s) CDK1
+DINACICLIB,CDK1,"DGIdb:CancerCommons,ChEMBL,ClearityFoundationClinicalTrial,Drug Repurposing Hub,GuideToPharmacology,MyCancerGenome,MyCancerGenomeClinicalTrial",acts on excluded target(s) CDK1
+FENOFIBRATE MICRONIZED,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+G&OUML; 6976,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+GW441756X,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+INDIRUBIN,CDK1,DGIdb:Drug Repurposing Hub,acts on excluded target(s) CDK1
+INDIRUBIN-3'-MONOXIME,CDK1,DGIdb:Drug Repurposing Hub,acts on excluded target(s) CDK1
+JNJ-7706621,CDK1,"DGIdb:Drug Repurposing Hub,GuideToPharmacology",acts on excluded target(s) CDK1
+K-00546,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+KENPAULLONE,CDK1,"DGIdb:Drug Repurposing Hub,TTD",acts on excluded target(s) CDK1
+KINASE INHIBITOR 2 [PMID: 30199702],CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+LADUVIGLUSIB,CDK1,"DGIdb:Drug Repurposing Hub,GuideToPharmacology,TTD",acts on excluded target(s) CDK1
+LAUROGUADINE,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+LY2090314,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+MILCICLIB,CDK1,OpenTargets,acts on excluded target(s) CDK1
+MILCICLIB,CDK1,"DGIdb:ChEMBL,Drug Repurposing Hub,GuideToPharmacology",acts on excluded target(s) CDK1
+MKC-1,CDK1,DGIdb:TTD,acts on excluded target(s) CDK1
+NVP-TAE684,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+OLOMOUCINE,CDK1,DGIdb:Drug Repurposing Hub,acts on excluded target(s) CDK1
+PATULIN,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+PF-562271,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+PHA-767491,CDK1,DGIdb:Drug Repurposing Hub,acts on excluded target(s) CDK1
+PHA-793887,CDK1,OpenTargets,acts on excluded target(s) CDK1
+PHA-793887,CDK1,DGIdb:ChEMBL,acts on excluded target(s) CDK1
+PHA-793887,CDK1,"DGIdb:Drug Repurposing Hub,TTD",acts on excluded target(s) CDK1
+PRAZOSIN,CDK1,DGIdb:Drug Repurposing Hub,acts on excluded target(s) CDK1
+PROTUBOXEPIN A,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+QR-6401,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+R547,CDK1,"DGIdb:ChEMBL,Drug Repurposing Hub,GuideToPharmacology",acts on excluded target(s) CDK1
+RG-1530,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+RG-547,CDK1,OpenTargets,acts on excluded target(s) CDK1
+RGB-286638,CDK1,OpenTargets,acts on excluded target(s) CDK1
+RGB-286638,CDK1,"DGIdb:Drug Repurposing Hub,GuideToPharmacology,TTD",acts on excluded target(s) CDK1
+RGB-286638,CDK1,DGIdb:ChEMBL,acts on excluded target(s) CDK1
+RIVICICLIB,CDK1,"DGIdb:Drug Repurposing Hub,GuideToPharmacology,TTD",acts on excluded target(s) CDK1
+RIVICICLIB,CDK1,DGIdb:ChEMBL,acts on excluded target(s) CDK1
+RO3306,CDK1,"DGIdb:Drug Repurposing Hub,GuideToPharmacology",acts on excluded target(s) CDK1
+RONICICLIB,CDK1,OpenTargets,acts on excluded target(s) CDK1
+RONICICLIB,CDK1,"DGIdb:CancerCommons,GuideToPharmacology,TTD",acts on excluded target(s) CDK1
+RONICICLIB,CDK1,DGIdb:ChEMBL,acts on excluded target(s) CDK1
+ROTENONE,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+RUCAPARIB,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+SAMURACICLIB,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+SELICICLIB,CDK1,OpenTargets,acts on excluded target(s) CDK1
+SELICICLIB,CDK1,"DGIdb:ChEMBL,Drug Repurposing Hub,TTD",acts on excluded target(s) CDK1
+SERTRALINE HYDROCHLORIDE,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+SNS-314,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+SOTRASTAURIN,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+SP-600125,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+SU9516,CDK1,"DGIdb:Drug Repurposing Hub,GuideToPharmacology",acts on excluded target(s) CDK1
+TAMATINIB,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+TANUXICICLIB,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+TERAMEPROCOL,CDK1,DGIdb:Drug Repurposing Hub,acts on excluded target(s) CDK1
+THAL-SNS-032,CDK1,DGIdb:GuideToPharmacology,acts on excluded target(s) CDK1
+VORUCICLIB,CDK1,"DGIdb:Drug Repurposing Hub,GuideToPharmacology",acts on excluded target(s) CDK1
+WITHAFERIN A,CDK1,DGIdb:DTC,acts on excluded target(s) CDK1
+ZOTIRACICLIB,CDK1,OpenTargets,acts on excluded target(s) CDK1
+ZOTIRACICLIB,CDK1,"DGIdb:ChEMBL,Drug Repurposing Hub,GuideToPharmacology",acts on excluded target(s) CDK1
+CENP-E INHIBITOR GSK-923295A,CENPE,DGIdb:Drug Repurposing Hub,acts on excluded target(s) CENPE
+GSK-923295,CENPE,DGIdb:TALC,acts on excluded target(s) CENPE
+(4-CHLOROPHENYL)(MORPHOLINO)METHANETHIONE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+"1,4-DIMETHOXYANTHRAQUINONE",PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+"2,4-DIHYDROXYBENZOPHENONE",PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+"2,6-DIMETHOXYQUINONE",PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+"3,5-DIPHENYLISOXAZOLE",PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+4-CHLOROMERCURIBENZOIC ACID,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+6-CHLORONICOTINIC ACID,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+ACID BLUE 129,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+ACITRETIN,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+ALPHAPRODINE HYDROCHLORIDE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+AMBUNOL,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+AMORFRUTIN A,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+ANTISENSE OLIGONUCLEOTIDES,PLK1,DGIdb:NCI,acts on excluded target(s) PLK1
+APOMORPHINE HYDROCHLORIDE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+AROTINOID ACID,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+BENSERAZIDE HYDROCHLORIDE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+BENZBROMARONE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+BETUNOLIC ACID,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+BI 2536,PLK1,DGIdb:TTD,acts on excluded target(s) PLK1
+BI-2536,PLK1,OpenTargets,acts on excluded target(s) PLK1
+BI-2536,PLK1,"DGIdb:ChEMBL,DTC,Drug Repurposing Hub,GuideToPharmacology,MyCancerGenome,TALC",acts on excluded target(s) PLK1
+CAFUSERTIB,PLK1,OpenTargets,acts on excluded target(s) PLK1
+CAFUSERTIB,PLK1,DGIdb:ChEMBL,acts on excluded target(s) PLK1
+CEFACLOR ANHYDROUS,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CEFAMANDOLE SODIUM,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CEFSULODIN SODIUM,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CEPHALOCHROMIN,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL103583,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL116548,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL118378,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL118678,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL119878,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL121556,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL122355,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1224755,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1232076,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL125044,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1255944,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1271059,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1287980,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1306556,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1310138,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1310701,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1362503,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1363249,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1412002,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1426508,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1451216,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1459280,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1486366,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1489812,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1503729,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL151797,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1519374,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1537417,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1547715,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1605629,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL164449,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1701915,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1707907,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL171699,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL175266,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL184450,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL1871992,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL223575,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL24983,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL274921,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL297304,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL374632,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL388979,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL421431,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL429095,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL462861,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL467987,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL495852,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL505670,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL515505,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL523200,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL527584,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL528373,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL530149,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL534535,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL535051,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL538798,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL548629,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL555260,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL565893,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL577365,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL582478,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL582764,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL584619,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL585279,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL585628,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL585654,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL587449,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL588749,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL590665,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL592124,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL592314,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL592558,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL599098,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL599255,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL599712,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL599924,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL599957,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL602807,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL602969,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHEMBL:CHEMBL84281,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CHLORPYRIFOS,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+COMPOUND 2 [PMID: 19097784],PLK1,DGIdb:GuideToPharmacology,acts on excluded target(s) PLK1
+COMPOUND 6 [PMID: 30125504],PLK1,DGIdb:GuideToPharmacology,acts on excluded target(s) PLK1
+COMPOUND 8 [PMID: 17480064],PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+CRYPTOTANSHINONE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+DIFFRACTAIC ACID,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+DIPYRIDAMOLE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+DISULFIRAM,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+DUAL BRD4/PLK1 INHIBITOR 23,PLK1,DGIdb:GuideToPharmacology,acts on excluded target(s) PLK1
+EBSELEN,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+ELLAGIC ACID,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+EMBELIN,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+ERYTHROMYCIN,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+EUFLAVINE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+FLUORESCEIN DIACETATE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+FLUPIRTINE MALEATE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+GSK-461364,PLK1,OpenTargets,acts on excluded target(s) PLK1
+GSK-461364A,PLK1,"DGIdb:ChEMBL,GuideToPharmacology",acts on excluded target(s) PLK1
+GSK579289A,PLK1,DGIdb:GuideToPharmacology,acts on excluded target(s) PLK1
+GUTHION,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+GW7647,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+GW843682X,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+GW853606,PLK1,DGIdb:GuideToPharmacology,acts on excluded target(s) PLK1
+GYROPHORIC ACID,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+HAEMATOXYLIN,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+HEXACHLOROPHENE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+HMN-214,PLK1,OpenTargets,acts on excluded target(s) PLK1
+HMN-214,PLK1,"DGIdb:ChEMBL,Drug Repurposing Hub",acts on excluded target(s) PLK1
+HYDROXYZINE PAMOATE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+IDARUBICIN HYDROCHLORIDE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+IMIDACLOPRID,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+INAMRINONE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+LANSOPRAZOLE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+LIPID ENCAPSULATED ANTI-PLK1 SIRNA TKM-PLK1,PLK1,DGIdb:TdgClinicalTrial,acts on excluded target(s) PLK1
+LITHOCHOLIC ACID,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+LOBARIC ACID,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+LOMOFUNGIN,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+MK-1496,PLK1,OpenTargets,acts on excluded target(s) PLK1
+MK-1496,PLK1,DGIdb:ChEMBL,acts on excluded target(s) PLK1
+MK-1496,PLK1,DGIdb:TTD,acts on excluded target(s) PLK1
+MLN0905,PLK1,DGIdb:GuideToPharmacology,acts on excluded target(s) PLK1
+MYRICETIN,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+N-OLEOYLDOPAMINE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+NANAOMYCIN,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+NMS-1286937,PLK1,"DGIdb:Drug Repurposing Hub,MyCancerGenome,TTD",acts on excluded target(s) PLK1
+NVP-TAE684,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+OLEIC ACID,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+OMEPRAZOLE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+ONVANSERTIB,PLK1,OpenTargets,acts on excluded target(s) PLK1
+ONVANSERTIB,PLK1,"DGIdb:ChEMBL,GuideToPharmacology,TALC,TTD",acts on excluded target(s) PLK1
+OXIDOPAMINE HYDROCHLORIDE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+OXYPHENBUTAZONE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+OXYTETRACYCLINE ANHYDROUS,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+PENTABROMOPHENOL,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+PENTACHLOROPHENOL,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+PENTOSALEN,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+PHOSMET,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+PHYSODIC ACID,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+PI3K/BET INHIBITOR LY294002,PLK1,DGIdb:Drug Repurposing Hub,acts on excluded target(s) PLK1
+PLOGOSERTIB,PLK1,DGIdb:GuideToPharmacology,acts on excluded target(s) PLK1
+POLO-LIKE KINASE 1 INHIBITOR GSK461364,PLK1,"DGIdb:Drug Repurposing Hub,MyCancerGenome,TALC,TTD",acts on excluded target(s) PLK1
+PROROXAN HYDROCHLORIDE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+PROTOPORPHYRIN,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+PURPURIN,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+PURPUROGALLIN,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+PYROGALLOL RED,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+PYRONIN Y,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+RG-1530,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+RIGOSERTIB,PLK1,"DGIdb:Drug Repurposing Hub,TTD,TdgClinicalTrial",acts on excluded target(s) PLK1
+RO3280,PLK1,DGIdb:GuideToPharmacology,acts on excluded target(s) PLK1
+SCLEROTIORIN,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+SENNOSIDE B,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+SIMVASTATIN,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+SLAZINIC ACID,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+SOTRASTAURIN,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+STAVUDINE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+SUCCIMER,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+TAK-960,PLK1,OpenTargets,acts on excluded target(s) PLK1
+TAK-960,PLK1,"DGIdb:ChEMBL,Drug Repurposing Hub,TTD",acts on excluded target(s) PLK1
+THIMEROSAL,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+THIOGUANOSINE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+THIRAM,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+TOPOTECAN HYDROCHLORIDE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+TOSUFLOXACIN TOSYLATE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+TRITIOZINE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+VANITIOLIDE,PLK1,DGIdb:DTC,acts on excluded target(s) PLK1
+VOLASERTIB,PLK1,OpenTargets,acts on excluded target(s) PLK1
+VOLASERTIB,PLK1,"DGIdb:ChEMBL,Drug Repurposing Hub,GuideToPharmacology,MyCancerGenome,TALC,TTD",acts on excluded target(s) PLK1
+WNY0824,PLK1,DGIdb:GuideToPharmacology,acts on excluded target(s) PLK1
+WORTMANNIN,PLK1,"DGIdb:Drug Repurposing Hub,NCI",acts on excluded target(s) PLK1
+XY-06-007,PLK1,DGIdb:GuideToPharmacology,acts on excluded target(s) PLK1
+CALYCULIN A,PPP2CA,DGIdb:GuideToPharmacology,acts on excluded target(s) PPP2CA
+CANTHARIDIN,PPP2CA,DGIdb:GuideToPharmacology,acts on excluded target(s) PPP2CA
+LB-100,PPP2CA,DGIdb:ChEMBL,acts on excluded target(s) PPP2CA
+LB-100,PPP2CA,DGIdb:TTD,acts on excluded target(s) PPP2CA
+MADURAMICIN ACID,PPP2CA,DGIdb:Drug Repurposing Hub,acts on excluded target(s) PPP2CA
+MICROCYSTIN-LR,PPP2CA,DGIdb:GuideToPharmacology,acts on excluded target(s) PPP2CA
+OKADAIC ACID,PPP2CA,DGIdb:GuideToPharmacology,acts on excluded target(s) PPP2CA
+LB-100,PPP2CA,OpenTargets,"acts on excluded target(s) PPP2CA,PPP2CB"
+GEFITINIB,SIRT2,WHO ATC L01 (ChEMBL),antineoplastic (WHO ATC L01: protein kinase inhibitors)
+PALBOCICLIB,NEK2,WHO ATC L01 (ChEMBL),antineoplastic (WHO ATC L01: protein kinase inhibitors)
+PAZOPANIB,NEK2,WHO ATC L01 (ChEMBL),antineoplastic (WHO ATC L01: protein kinase inhibitors)
+ALPRAZOLAM,CREBBP,DGIdb:DTC,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+ANACARDIC ACID,EP300,DGIdb:GuideToPharmacology,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+C646,EP300,DGIdb:GuideToPharmacology,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+COLCHICINE,CREBBP,DGIdb:DTC,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+COMPOUND 50 [PMID: 24313754],CREBBP,DGIdb:GuideToPharmacology,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+CURCUMIN,EP300,DGIdb:Drug Repurposing Hub,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+CURCUMIN,EP300,DGIdb:GuideToPharmacology,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+EPIGALLOCATECHIN GALLATE,EP300,DGIdb:GuideToPharmacology,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+ESTAZOLAM,CREBBP,DGIdb:DTC,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+GARCINOL,EP300,DGIdb:GuideToPharmacology,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+GNE-049,CREBBP,DGIdb:GuideToPharmacology,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+H3-COA-20,EP300,DGIdb:GuideToPharmacology,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+I-CBP112,CREBBP,DGIdb:GuideToPharmacology,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+I-CBP112,EP300,DGIdb:GuideToPharmacology,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+INOBRODIB,CREBBP,DGIdb:GuideToPharmacology,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+INOBRODIB,EP300,DGIdb:GuideToPharmacology,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+ISCHEMIN,CREBBP,DGIdb:GuideToPharmacology,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+LYS-COA,EP300,DGIdb:GuideToPharmacology,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+METHYLPHENIDATE HYDROCHLORIDE,CREBBP,DGIdb:CIViC,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+METHYLPHENIDATE HYDROCHLORIDE,EP300,DGIdb:Drug Repurposing Hub,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+MIDAZOLAM HYDROCHLORIDE,CREBBP,DGIdb:DTC,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+PAPAVERINE,CREBBP,DGIdb:DTC,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+PLUMBAGIN,EP300,DGIdb:GuideToPharmacology,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+PRI-724,CREBBP,OpenTargets,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+PRI-724,CREBBP,"DGIdb:ChEMBL,TTD",direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+SGC-CBP30,CREBBP,"DGIdb:Drug Repurposing Hub,GuideToPharmacology",direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+SGC-CBP30,EP300,"DGIdb:Drug Repurposing Hub,GuideToPharmacology",direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+TRIAZOLAM,CREBBP,DGIdb:DTC,direction consistent but not proposable: CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators
+(-)-ROLIPRAM,CREBBP,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+A-485,CREBBP,DGIdb:Drug Repurposing Hub,investigational compound with unknown direction (not proposable for a child)
+A-485,EP300,DGIdb:Drug Repurposing Hub,investigational compound with unknown direction (not proposable for a child)
+ADAVOSERTIB,NEK2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+BI-2536,ANAPC1,DGIdb:PRISM,investigational compound with unknown direction (not proposable for a child)
+CBPD-268,CREBBP,DGIdb:GuideToPharmacology,investigational compound with unknown direction (not proposable for a child)
+CBPD-268,EP300,DGIdb:GuideToPharmacology,investigational compound with unknown direction (not proposable for a child)
+CBPD-409,CREBBP,DGIdb:GuideToPharmacology,investigational compound with unknown direction (not proposable for a child)
+CBPD-409,EP300,DGIdb:GuideToPharmacology,investigational compound with unknown direction (not proposable for a child)
+CENISERTIB,NEK2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CHEMBL:CHEMBL1530911,CREBBP,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CHEMBL:CHEMBL1794051,SIRT2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CHEMBL:CHEMBL1797707,CREBBP,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CHEMBL:CHEMBL1797707,EP300,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CHEMBL:CHEMBL1797708,CREBBP,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CHEMBL:CHEMBL1797708,EP300,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CHEMBL:CHEMBL1797711,CREBBP,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CHEMBL:CHEMBL1797712,CREBBP,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CHEMBL:CHEMBL1797713,CREBBP,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CHEMBL:CHEMBL1945130,SIRT2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CHEMBL:CHEMBL1997335,NEK2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CHEMBL:CHEMBL257748,CREBBP,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CHEMBL:CHEMBL257748,EP300,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CHEMBL:CHEMBL404916,EP300,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CHEMBL:CHEMBL589270,SIRT2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CYC-116,NEK2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+DACTOLISIB,NEK2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+DOVITINIB,NEK2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+E-7386,CREBBP,DGIdb:Drug Repurposing Hub,investigational compound with unknown direction (not proposable for a child)
+ETAZOLATE HYDROCHLORIDE,CREBBP,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+GARCINOL,EP300,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+GASTRODIN,NAMPT,DGIdb:PRISM,investigational compound with unknown direction (not proposable for a child)
+GEMCITABINE PRODRUG LY2334737,BUB1B,DGIdb:PRISM,investigational compound with unknown direction (not proposable for a child)
+GW441756X,NEK2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+GW843682X,NEK2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+ILORASERTIB,NEK2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+MTOR INHIBITOR,CREBBP,DGIdb:CIViC,investigational compound with unknown direction (not proposable for a child)
+NOCODAZOLE,CREBBP,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+NVP-TAE684,NAMPT,DGIdb:PRISM,investigational compound with unknown direction (not proposable for a child)
+NVP-TAE684,NEK2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+OXOGLAUCINE,CREBBP,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+PAULLONE,SIRT2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+PINOMETOSTAT,SIRT2,DGIdb:PRISM,investigational compound with unknown direction (not proposable for a child)
+RO31-8220,SIRT2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+SP-600125,NEK2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+TAMATINIB,NEK2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+THERAPEUTIC GLUCOCORTICOID,CREBBP,DGIdb:CIViC,investigational compound with unknown direction (not proposable for a child)
+TRACAZOLATE,CREBBP,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+TRICHOSTATIN A,SIRT2,DGIdb:DTC,investigational compound with unknown direction (not proposable for a child)
+CHS-828,NAMPT,"DGIdb:Drug Repurposing Hub,TTD",wrong direction or unsafe class: nicotinamide phosphoribosyltransferase inhibitor
+CHS-828,NAMPT,DGIdb:Drug Repurposing Hub,wrong direction or unsafe class: nicotinamide phosphoribosyltransferase inhibitor
+DAPORINAD,NAMPT,OpenTargets,wrong direction or unsafe class: nicotinamide phosphoribosyltransferase inhibitor
+DAPORINAD,NAMPT,"DGIdb:ChEMBL,Drug Repurposing Hub,PRISM,TTD",wrong direction or unsafe class: nicotinamide phosphoribosyltransferase inhibitor
+NAMPT INHIBITOR STF-118804,NAMPT,DGIdb:Drug Repurposing Hub,wrong direction or unsafe class: nicotinamide phosphoribosyltransferase inhibitor
+PADNARSERTIB,NAMPT,DGIdb:Drug Repurposing Hub,wrong direction or unsafe class: nicotinamide phosphoribosyltransferase inhibitor
+STF-31,NAMPT,DGIdb:Drug Repurposing Hub,wrong direction or unsafe class: nicotinamide phosphoribosyltransferase inhibitor
+TEGLARINAD,NAMPT,OpenTargets,wrong direction or unsafe class: nicotinamide phosphoribosyltransferase inhibitor
+TEGLARINAD CHLORIDE,NAMPT,OpenTargets,wrong direction or unsafe class: nicotinamide phosphoribosyltransferase inhibitor
+TEGLARINAD CHLORIDE,NAMPT,DGIdb:ChEMBL,wrong direction or unsafe class: nicotinamide phosphoribosyltransferase inhibitor
+TEGLARINAD CHLORIDE,NAMPT,"DGIdb:TTD,TdgClinicalTrial",wrong direction or unsafe class: nicotinamide phosphoribosyltransferase inhibitor
+AGK2,SIRT2,DGIdb:GuideToPharmacology,wrong direction or unsafe class: sirtuin inhibitor
+SALERMIDE,SIRT2,DGIdb:DTC,wrong direction or unsafe class: sirtuin inhibitor
+SIRTINOL,SIRT2,DGIdb:Drug Repurposing Hub,wrong direction or unsafe class: sirtuin inhibitor
+TENOVIN-1,SIRT2,DGIdb:Drug Repurposing Hub,wrong direction or unsafe class: sirtuin inhibitor
+COMPOUND 17 [PMID: 23570514],SIRT2,DGIdb:GuideToPharmacology,wrong direction: down vs wanted up
+COMPOUND 86 [PMID: 26982234],SIRT2,DGIdb:GuideToPharmacology,wrong direction: down vs wanted up
+PANOBINOSTAT,SIRT2,DGIdb:TALC,wrong direction: down vs wanted up
+COMPOUND 2 [PMID: 21627121],NEK2,DGIdb:GuideToPharmacology,wrong direction: inhibits a network partner of a loss-of-function gene
+COMPOUND 31 [PMID: 20936789],NEK2,DGIdb:GuideToPharmacology,wrong direction: inhibits a network partner of a loss-of-function gene
+GSK579289A,NEK2,DGIdb:GuideToPharmacology,wrong direction: inhibits a network partner of a loss-of-function gene
+HESPERADIN,NEK2,DGIdb:DTC,wrong direction: inhibits a network partner of a loss-of-function gene
+TTK21,CREBBP,DGIdb:GuideToPharmacology,wrong direction: up vs wanted down
+TTK21,EP300,DGIdb:GuideToPharmacology,wrong direction: up vs wanted down

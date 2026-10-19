@@ -1,0 +1,9 @@
+# never commit case data
+*.vcf
+*.vcf.gz
+*.vcf.gz.tbi
+patient_hpo*.txt
+*PATIENT*
+phenotype/results/
+**/data/
+__pycache__/

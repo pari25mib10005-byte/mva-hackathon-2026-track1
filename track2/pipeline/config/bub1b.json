@@ -1,0 +1,184 @@
+{
+  "gene": "BUB1B",
+  "extends": "cin_exclusions.json",
+  "mode": "loss_of_function",
+  "_mechanism": "Compound-heterozygous BUBR1 hypomorph (one truncating + one kinase-domain missense allele): residual BUBR1 is low; goal is to raise/stabilise it and never weaken the SAC further.",
+  "modifiers": {
+    "SIRT2": {
+      "want": "up",
+      "weight": 0.9,
+      "why": "deacetylates BUBR1 K668, protecting it from degradation"
+    },
+    "NAMPT": {
+      "want": "up",
+      "weight": 0.8,
+      "why": "rate-limiting NAD+ salvage enzyme feeding SIRT2"
+    },
+    "CREBBP": {
+      "want": "down",
+      "weight": 0.4,
+      "why": "acetylates BUBR1 K668 (promotes its loss); activators are harmful",
+      "propose": false,
+      "no_propose_why": "CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators"
+    },
+    "EP300": {
+      "want": "down",
+      "weight": 0.4,
+      "why": "CBP paralogue; same rationale",
+      "propose": false,
+      "no_propose_why": "CREBBP/EP300 loss causes Rubinstein-Taybi syndrome and both are tumour suppressors; used only to exclude activators"
+    }
+  },
+  "network": {
+    "max_neighbours": 25,
+    "min_score": 0.9
+  },
+  "curated_candidates": [
+    {
+      "drug": "Nicotinamide riboside",
+      "gene": "SIRT2/NAD+",
+      "stage": "SUPPLEMENT",
+      "action": "NAD+ precursor",
+      "direction": "up (matches)",
+      "score": 0.95,
+      "mechanism": "Raises NAD+ -> SIRT2 deacetylation of BUBR1 K668 -> less degradation",
+      "refs": [
+        "North BJ et al., EMBO J 2014 (SIRT2/NMN raise BubR1 in mice)",
+        "NR open-label studies in ataxia-telangiectasia incl. children (VERIFY citation)"
+      ]
+    },
+    {
+      "drug": "Nicotinamide mononucleotide",
+      "gene": "SIRT2/NAD+",
+      "stage": "SUPPLEMENT",
+      "action": "NAD+ precursor",
+      "direction": "up (matches)",
+      "score": 0.85,
+      "mechanism": "Same axis as NR; directly tested in BubR1 mice",
+      "refs": [
+        "North BJ et al., EMBO J 2014"
+      ]
+    },
+    {
+      "drug": "Nicotinamide",
+      "gene": "SIRT2/NAD+",
+      "stage": "APPROVAL",
+      "action": "NAD+ precursor",
+      "direction": "up at low dose; sirtuin-inhibitory at high conc. (CAUTION)",
+      "score": 0.65,
+      "mechanism": "Indirect by analogy to NR/NMN",
+      "refs": [
+        "analogy; no BubR1-specific study"
+      ]
+    },
+    {
+      "drug": "N-acetylcysteine",
+      "gene": "downstream",
+      "stage": "APPROVAL",
+      "action": "antioxidant",
+      "direction": "n/a",
+      "score": 0.45,
+      "mechanism": "Low-BubR1 cells more sensitive to oxidative stress",
+      "refs": [
+        "VERIFY source"
+      ]
+    },
+    {
+      "drug": "Dasatinib + quercetin",
+      "gene": "downstream",
+      "stage": "APPROVAL (dasatinib)",
+      "action": "senolytic",
+      "direction": "n/a",
+      "score": 0.25,
+      "mechanism": "Clears senescent cells; reserve only (cytotoxic kinase inhibitor)",
+      "refs": [
+        "Baker DJ et al., Nature 2011 (p16 senescent-cell clearance in BubR1 hypomorphs)"
+      ]
+    }
+  ],
+  "lincs": {
+    "_about": "Signature-reversal settings. Alarm genes = p53/apoptosis/interferon genes; drugs that switch them off are flagged (they would let aneuploid cells survive). Top-level exclude_patterns and known_mechanisms also apply.",
+    "alarm_genes": [
+      "CDKN1A",
+      "GDF15",
+      "MDM2",
+      "BAX",
+      "BID",
+      "ATF3",
+      "DDIT4",
+      "FAS",
+      "TP53I3",
+      "SESN1",
+      "SESN2",
+      "DDB2",
+      "XPC",
+      "RRM2B",
+      "ZMAT3",
+      "TNFRSF10B",
+      "PLK3",
+      "FDXR",
+      "AEN",
+      "BBC3",
+      "PMAIP1",
+      "TP53INP1",
+      "GADD45A",
+      "ISG15",
+      "IFI6",
+      "IFI44",
+      "IFI44L",
+      "IFIT1",
+      "IFIT2",
+      "IFIT3",
+      "IRF7",
+      "MX1",
+      "OAS1",
+      "OAS2",
+      "STAT1",
+      "IFI27",
+      "BST2"
+    ],
+    "alarm_suppression_min": 3
+  },
+  "exclude_patterns": [
+    [
+      "sirtuin",
+      "inhibitor"
+    ],
+    [
+      "nicotinamide phosphoribosyltransferase",
+      "inhibitor"
+    ],
+    [
+      "nampt",
+      "inhibitor"
+    ],
+    [
+      "janus kinase",
+      "inhibitor"
+    ],
+    [
+      "p53",
+      "inhibitor"
+    ]
+  ],
+  "known_mechanisms": {
+    "_about": "Curated mechanisms for research compounds that DGIdb/Open Targets do not annotate (from vendor/literature descriptions); used only to EXCLUDE wrong-direction agents.",
+    "SALERMIDE": "NAD-dependent deacetylase sirtuin inhibitor",
+    "SIRTINOL": "NAD-dependent deacetylase sirtuin inhibitor",
+    "TENOVIN-1": "NAD-dependent deacetylase sirtuin inhibitor",
+    "AGK2": "NAD-dependent deacetylase sirtuin inhibitor",
+    "CAMBINOL": "NAD-dependent deacetylase sirtuin inhibitor",
+    "EX-527": "NAD-dependent deacetylase sirtuin inhibitor",
+    "SELISISTAT": "NAD-dependent deacetylase sirtuin inhibitor",
+    "STF-31": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+    "CHS-828": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+    "STF-118804": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+    "NAMPT INHIBITOR STF-118804": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+    "APO-866": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+    "FK-866": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+    "GNE-617": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+    "TEGLARINAD CHLORIDE": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+    "DAPORINAD": "Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor",
+    "PADNARSERTIB": "PAK4 and Nicotinamide phosphoribosyltransferase (NAMPT) inhibitor"
+  }
+}
