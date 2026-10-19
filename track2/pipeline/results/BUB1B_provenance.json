@@ -1,7 +1,7 @@
 {
   "gene": "BUB1B",
   "ensembl": "ENSG00000156970",
-  "run_utc": "2026-10-19T13:36:16.960807Z",
+  "run_utc": "2026-10-19T15:32:01.229943Z",
   "sources": {
     "open_targets": "https://api.platform.opentargets.org/api/v4/graphql",
     "dgidb": "https://dgidb.org/api/graphql"
@@ -112,6 +112,19 @@
         "refs": [
           "North BJ et al., EMBO J 2014 (SIRT2/NMN raise BubR1 in mice)",
           "NR open-label studies in ataxia-telangiectasia incl. children (VERIFY citation)"
+        ]
+      },
+      {
+        "drug": "Niacin",
+        "gene": "SIRT2/NAD+",
+        "stage": "APPROVAL",
+        "action": "NAD+ precursor (Preiss-Handler)",
+        "direction": "up (matches)",
+        "score": 0.93,
+        "mechanism": "Approved medicine; raises blood NAD+ up to 8-fold in humans -> SIRT2 -> BUBR1 K668 deacetylation",
+        "refs": [
+          "Pirinen E et al. Cell Metab 2020;31(6):1078-90 (niacin raised blood NAD+ in humans)",
+          "North BJ et al. EMBO J 2014 (NAD+ -> SIRT2 -> BubR1)"
         ]
       },
       {

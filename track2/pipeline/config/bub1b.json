@@ -48,6 +48,19 @@
       ]
     },
     {
+      "drug": "Niacin",
+      "gene": "SIRT2/NAD+",
+      "stage": "APPROVAL",
+      "action": "NAD+ precursor (Preiss-Handler)",
+      "direction": "up (matches)",
+      "score": 0.93,
+      "mechanism": "Approved medicine; raises blood NAD+ up to 8-fold in humans -> SIRT2 -> BUBR1 K668 deacetylation",
+      "refs": [
+        "Pirinen E et al. Cell Metab 2020;31(6):1078-90 (niacin raised blood NAD+ in humans)",
+        "North BJ et al. EMBO J 2014 (NAD+ -> SIRT2 -> BubR1)"
+      ]
+    },
+    {
       "drug": "Nicotinamide mononucleotide",
       "gene": "SIRT2/NAD+",
       "stage": "SUPPLEMENT",

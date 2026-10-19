@@ -2,19 +2,20 @@
 
 > Hypotheses for investigation, not treatment advice.
 
-- Run: 2026-10-19T13:36:16Z
+- Run: 2026-10-19T15:32:01Z
 - Gene set: 29 genes; raw records: 552; records on BUB1B itself: 1
-- Excluded: 551 records; retained candidates: 6
+- Excluded: 551 records; retained candidates: 7
 
 ## Headline candidates (curated or direction-confirmed)
 
 | # | Drug | Score | Via gene | Stage | Layer |
 |---|---|---|---|---|---|
 | 1 | NICOTINAMIDE RIBOSIDE | 0.95 | SIRT2/NAD+ | SUPPLEMENT | literature (not in drug–target DBs) |
-| 2 | NICOTINAMIDE MONONUCLEOTIDE | 0.85 | SIRT2/NAD+ | SUPPLEMENT | literature (not in drug–target DBs) |
-| 3 | NICOTINAMIDE | 0.65 | SIRT2/NAD+ | APPROVAL | literature (not in drug–target DBs) |
-| 4 | N-ACETYLCYSTEINE | 0.45 | downstream | APPROVAL | literature (not in drug–target DBs) |
-| 5 | DASATINIB + QUERCETIN | 0.25 | downstream | APPROVAL (dasatinib) | literature (not in drug–target DBs) |
+| 2 | NIACIN | 0.93 | SIRT2/NAD+ | APPROVAL | literature (not in drug–target DBs) |
+| 3 | NICOTINAMIDE MONONUCLEOTIDE | 0.85 | SIRT2/NAD+ | SUPPLEMENT | literature (not in drug–target DBs) |
+| 4 | NICOTINAMIDE | 0.65 | SIRT2/NAD+ | APPROVAL | literature (not in drug–target DBs) |
+| 5 | N-ACETYLCYSTEINE | 0.45 | downstream | APPROVAL | literature (not in drug–target DBs) |
+| 6 | DASATINIB + QUERCETIN | 0.25 | downstream | APPROVAL (dasatinib) | literature (not in drug–target DBs) |
 
 ## Database hits with a confirmed, correct direction: 0
 

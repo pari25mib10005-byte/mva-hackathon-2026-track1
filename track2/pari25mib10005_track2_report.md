@@ -11,7 +11,7 @@ Code and data provenance: `track2/pipeline/` in [github.com/pari25mib10005-byte/
 
 This child has a rare condition, mosaic variegated aneuploidy (MVA), in which some of his cells end up with too many or too few chromosomes when they divide. We found that it is caused by two faulty copies of a gene called *BUB1B*. That gene makes BUBR1, a protein that acts like a safety check, telling a cell to wait until its chromosomes are sorted correctly before dividing. His cells still make some BUBR1, but too little, because it is broken down too quickly.
 
-Working backwards from his symptoms alone, our analysis independently pointed to the same gene and the same faulty cell-division safety check. We then looked for a medicine that already exists and might help his cells keep more of the BUBR1 they make. Our best idea is **nicotinamide riboside**, an inexpensive form of vitamin B3 that has been given to children with another rare condition. In mice, this approach increased BUBR1. It has **not** been tested for MVA. It might reduce new chromosome errors over time, but it cannot undo features that formed before birth. We set out how it should be tested in the lab before anyone considers it for him.
+Working backwards from his symptoms alone, our analysis independently pointed to the same gene and the same faulty cell-division safety check. We then looked for a medicine that already exists and might help his cells keep more of the BUBR1 they make. Our best idea is to raise a natural molecule called NAD⁺, which helps the cell protect BUBR1. Two forms of vitamin B3 can do this: **niacin**, an approved prescription medicine, and **nicotinamide riboside**, a supplement that has been given to children with another rare condition. In mice, this approach increased BUBR1. It has **not** been tested for MVA. It might reduce new chromosome errors over time, but it cannot undo features that formed before birth. We set out how it should be tested in the lab before anyone considers it for him.
 
 ---
 
@@ -19,7 +19,7 @@ Working backwards from his symptoms alone, our analysis independently pointed to
 
 Our Track 1 analysis identified compound heterozygous *BUB1B* variants (one truncating, one missense; exact variant identifiers are withheld from public materials). We argue that this genotype produces a **BUBR1 hypomorph**: the child's cells make some BUBR1, but too little, because one allele is null and the other encodes an unstable protein. The therapeutic goal is therefore to **stabilise the BUBR1 that remains**, while avoiding anything that weakens the mitotic checkpoint further or adds cancer risk.
 
-A systematic, gene-agnostic screen of DGIdb and Open Targets across 29 related genes found **no usable drug that targets BUB1B** and **no approved drug known to push the BUBR1-stability pathway in the right direction**; all 552 drug–gene records were excluded as harmful, wrong-direction, unsafe or investigational-with-unknown-direction, except one approved compound of unknown direction. An independent phenotype-driven analysis, starting from the patient's clinical features rather than his DNA, ranked *BUB1B* 16th of 2,479 genes and converged on the same checkpoint pathway, with no directly druggable target in the helpful direction. A third, pathway-agnostic route (LINCS L1000 signature reversal) tested the NAD⁺ hypothesis with a pre-specified statistic: support was weak and not significant (p = 0.085), and the analysis showed that naive reversal of a chromosome-instability signature favours drugs that silence the cell's protective p53/interferon alarm (93 of the top 100), which we exclude. The strongest candidate is therefore taken from the literature: **nicotinamide riboside (NR)**, an NAD⁺ precursor. It acts on the NAD⁺ → SIRT2 → BUBR1 axis that raised BubR1 levels in mice, and it has open-label safety data in children with another DNA-repair/ageing disorder. We expect at most a partial benefit and propose a staged validation plan before any clinical use.
+A systematic, gene-agnostic screen of DGIdb and Open Targets across 29 related genes found **no usable drug that targets BUB1B** and **no approved drug known to push the BUBR1-stability pathway in the right direction**; all 552 drug–gene records were excluded as harmful, wrong-direction, unsafe or investigational-with-unknown-direction, except one approved compound of unknown direction. An independent phenotype-driven analysis, starting from the patient's clinical features rather than his DNA, ranked *BUB1B* 16th of 2,479 genes and converged on the same checkpoint pathway, with no directly druggable target in the helpful direction. A third, pathway-agnostic route (LINCS L1000 signature reversal) tested the NAD⁺ hypothesis with a pre-specified statistic: support was weak and not significant (p = 0.085), and the analysis showed that naive reversal of a chromosome-instability signature favours drugs that silence the cell's protective p53/interferon alarm (93 of the top 100), which we exclude. The lead strategy is therefore **NAD⁺ repletion**, with two options: **niacin**, an approved prescription medicine that raised blood NAD⁺ up to 8-fold in humans, and **nicotinamide riboside (NR)**, a supplement with the stronger paediatric safety record. Local checks of the child's genome show that both drugs' conversion pathways are intact and flag two genetic risk factors for vincristine neuropathy, relevant to his cancer care. Variant-effect predictors support the mechanism (AlphaMissense 0.92, likely pathogenic, for the missense allele; high-confidence loss-of-function for the truncating allele). Both act on the NAD⁺ → SIRT2 → BUBR1 axis that raised BubR1 levels in mice. We expect at most a partial benefit and propose a staged validation plan before any clinical use.
 
 ---
 
@@ -52,6 +52,18 @@ The C-terminal (pseudo)kinase domain is largely dispensable for catalysis in ver
 **Allele A (truncating).** Truncating *BUB1B* alleles in MVA patients give no detectable transcript, consistent with nonsense-mediated decay [1]. Any truncated protein that escaped NMD would lack the stabilising C-terminal domain [4]. We model this allele as null.
 
 **Allele B (kinase-domain missense).** This introduces a charge-altering substitution inside the kinase domain. In patient cells, MVA missense mutations in or near this domain consistently caused rapid BUBR1 turnover rather than loss of a specific function [1]. We predict a full-length but unstable protein.
+
+**Variant-effect predictors (Ensembl VEP, October 2026) support both predictions:**
+
+| Predictor | Allele A (truncating) | Allele B (kinase-domain missense) |
+|---|---|---|
+| LOFTEE | **High-confidence loss-of-function**; 50-bp rule passes, so nonsense-mediated decay is predicted [27] | n/a |
+| AlphaMissense | n/a | **0.923, likely pathogenic** (threshold 0.564) [23] |
+| SIFT / PolyPhen-2 | n/a | Deleterious (0.01) / probably damaging (0.997) |
+| CADD (phred) | 36 | 24.5 [24] |
+| SpliceAI (max delta) | 0.03 | 0.00 [25] |
+
+The missense allele is predicted to damage the protein without affecting splicing, consistent with a full-length but unstable BUBR1; the truncating allele is predicted to be removed by NMD. Exact variant identifiers are withheld.
 
 ### 1.4 Combined model: a BUBR1 hypomorph
 
@@ -152,7 +164,7 @@ Section 2 starts from the gene. This analysis starts from the **patient's clinic
 | Growth before and after birth (2) | Yes | 17 vs 8.4, **p = 8×10⁻⁴**; 3 vs 1.7, p = 0.25 | Genetic (MVA) |
 | Perinatal (1) | No | 0 vs 1.2, p = 1.0 | Likely secondary: growth-restricted fetuses are often delivered early |
 | Nutritional growth after birth (1) | No | 4 vs 6.7, p = 0.93 | Likely secondary: growth disorder plus illness |
-| Muscle (1) | No | 0 vs 3.4, p = 1.0 | Likely acquired: nutrition, the cancer itself, or treatment (vincristine, standard for this tumour type, causes neuropathy and muscle wasting) |
+| Muscle (1) | No | 0 vs 3.4, p = 1.0 | Likely acquired: nutrition, the cancer itself, or treatment (vincristine, standard for this tumour type, causes neuropathy and muscle wasting); the child carries genetic risk factors for vincristine neuropathy (Section 7.1) |
 | Renal (1) | No | 0 vs 0.6, p = 1.0 | Acquired (e.g. loop diuretics in premature infants, some chemotherapies) **or a second diagnosis** |
 
 **The MVA network explains the tumour and growth features strongly and the other four not at all**, so those four are secondary, acquired, or due to a second cause. "Secondary" and "acquired" are hypotheses from known causes; treatment history was not available to us.
@@ -175,14 +187,15 @@ Routes 1 and 2 both use prior knowledge of genes and pathways. This route asks, 
 |---|---|
 | Significant reversers (FDR < 0.05) | 1,134 of 5,425 |
 | NAD⁺/sirtuin axis (pre-specified) | SRT-1720 rank 283 (FDR 7×10⁻⁴); resveratrol 1,295 (FDR 0.10); NAD⁺ (Nadide) 1,683 (FDR 0.15); nicotinamide 3,256 (FDR 0.97). **Group test p = 0.085 (not significant)**; NR and NMN are not in LINCS |
+| Niacin (NAD⁺ precursor; **not pre-specified**, exploratory) | Rank 98 (top 2%, FDR 2×10⁻⁶); restores division genes (FDR 4×10⁻⁸); switches off 3 alarm genes (*ATF3*, *CDKN1A*, *MX1*). Post-hoc group test including niacin: p = 0.024; NAD⁺ precursors only: p = 0.13 |
 | Top 100 reversers that switch off ≥ 3 alarm genes | **93** (e.g. tofacitinib, a JAK inhibitor; EX-527, a sirtuin inhibitor; APO-866, a NAMPT inhibitor) |
 | Top 100 remaining after all safety rules | 6 (2 approved), with no coherent mechanism |
 | Exploratory: restore division genes without silencing the alarm | 100 at FDR < 0.05; 93 pass safety (27 approved), mechanistically heterogeneous (antipsychotics, local anaesthetics, hormones, NSAIDs) |
 
 **Interpretation.**
-- **The NAD⁺ hypothesis gains no significant transcriptomic support.** Only the synthetic SIRT1 activator SRT-1720 reverses significantly; nicotinamide does not, consistent with its sirtuin-inhibiting effect at high concentration (Section 7). Because L1000 measures transcripts, it cannot see NR's proposed mechanism (BUBR1 acetylation and protein turnover), so this is an absence of support, not evidence against.
+- **The NAD⁺ hypothesis gains no significant transcriptomic support.** Only the synthetic SIRT1 activator SRT-1720 reverses significantly; nicotinamide does not, consistent with its sirtuin-inhibiting effect at high concentration (Section 7). Because L1000 measures transcripts, it cannot see NR's proposed mechanism (BUBR1 acetylation and protein turnover), so this is an absence of support, not evidence against. A human niacin trial found the same pattern: NAD⁺ repletion corrected the metabolome without correcting transcriptional stress responses [26]. Niacin, omitted from our pre-specified list, is a top-2% reverser; we report this as exploratory, and its partial alarm suppression (*CDKN1A*) becomes a readout in the cell experiments.
 - **Naive reversal is the wrong objective for chromosome-instability disorders.** Most strong reversers act by silencing the p53/interferon alarm, which would let aneuploid cells survive in a cancer-prone child. Reversal must be split into its two halves and alarm-suppressors excluded; we report this as a methodological finding.
-- **No new candidate is promoted.** The safe, division-restoring compounds share no pathway, so we treat them as exploratory comparators for the cell screen (Section 10), not as leads.
+- **No new candidate is promoted from the screen itself;** niacin enters the shortlist on mechanism (Section 7), with its LINCS result as exploratory support. The safe, division-restoring compounds share no pathway, These compounds are treated as exploratory comparators for the cell screen (Section 10), not as leads.
 
 ---
 
@@ -193,7 +206,7 @@ Routes 1 and 2 both use prior knowledge of genes and pathways. This route asks, 
 | Is *BUB1B* the right gene? | Track 1 genotype | Ranked 16th of 2,479 from features alone | Knockout lowers checkpoint genes (*BUB1*, *TRIP13*, *CDC20*, *PLK1*) | **Consistent** |
 | Which biology is disrupted? | Spindle checkpoint; PP2A-B56 attachment | Module enriched for checkpoint signalling | Loss of division genes plus p53/interferon alarm | **Consistent** |
 | Can it be drugged directly in the right direction? | 0 direction-confirmed approved drugs | 0 proposable module drugs | No safe reverser with a coherent mechanism | **Consistent (no)** |
-| Is the NAD⁺/sirtuin strategy supported? | Mechanism-based (literature) | Indirect strategy required | Weak, not significant (p = 0.085) | **Literature-based; untested in transcripts** |
+| Is the NAD⁺/sirtuin strategy supported? | Mechanism-based (literature) | Indirect strategy required | Pre-specified p = 0.085; niacin top 2% (exploratory, post-hoc p = 0.024) | **Mechanism-based; suggestive, not confirmed, in transcripts** |
 | Which features can a drug address? | n/a | Tumour and growth features (genetic); four others secondary, acquired or a second cause | n/a | **Scope defined** |
 
 Three independent starting points agree on the gene, the pathway and the conclusion that the checkpoint cannot be drugged directly. The choice of an indirect BUBR1-stabilising strategy rests on that agreement; the choice of NR within it rests on mechanism and paediatric safety, and remains a hypothesis for the validation plan (Section 10).
@@ -224,15 +237,33 @@ Evidence tiers: **A** = mechanism shown in a BubR1 model and paediatric human sa
 
 | # | Agent | Mechanistic link | Key evidence | Status and paediatric safety | Main concerns | Tier |
 |---|---|---|---|---|---|---|
-| 1 | **Nicotinamide riboside (NR)** | NAD⁺ precursor → SIRT2 deacetylation of BUBR1 K668 → less degradation | NAD⁺ precursor (NMN) raised BubR1 in mice [5] | Supplement. Open-label studies in ataxia-telangiectasia: n=24, mean age 17.5 [8]; 2-year study, n=10 incl. 7 children aged 3+ [9]; case starting at 3.5 years, no adverse effects [10] | Partial rescue at best; theoretical concern that raising NAD⁺ could support tumour growth in a cancer-prone child | **A** |
+| 1a | **Nicotinamide riboside (NR)** | NAD⁺ precursor → SIRT2 deacetylation of BUBR1 K668 → less degradation | NAD⁺ precursor (NMN) raised BubR1 in mice [5] | Supplement. Open-label studies in ataxia-telangiectasia: n=24, mean age 17.5 [8]; 2-year study, n=10 incl. 7 children aged 3+ [9]; case starting at 3.5 years, no adverse effects [10] | Partial rescue at best; theoretical concern that raising NAD⁺ could support tumour growth in a cancer-prone child | **A** |
+| 1b | **Niacin (nicotinic acid)** — *approved medication* | NAD⁺ precursor (Preiss–Handler route) → same SIRT2 → BUBR1 axis | Raised blood NAD⁺ up to 8-fold in humans and restored muscle NAD⁺ in mitochondrial myopathy [26]; exploratory LINCS: 98th of 5,425 reversers (Section 4) | Prescription medicine for dyslipidaemia; long clinical use; paediatric experience limited | Flushing; liver toxicity at high or sustained-release doses; switches off 3 alarm genes (incl. *CDKN1A*) in LINCS, to be monitored | **B** |
 | 2 | Nicotinamide mononucleotide (NMN) | Same axis | Directly tested: increased BubR1 in vivo [5] | Little paediatric data; regulatory status varies by country | As NR, with less human safety data | **B** |
 | 3 | Nicotinamide (vitamin B3) | NAD⁺ precursor | By analogy with NR/NMN | Approved, inexpensive, long clinical use | At high concentrations it *inhibits* sirtuins, which could work against the goal | **B/C** |
 | 4 | N-acetylcysteine (NAC) | Antioxidant | Mice with BUBR1 at ~20% of normal had higher mortality under oxidative stress [11]; no antioxidant was tested | Approved, long paediatric use | Weak, indirect link; exploratory only | **C** |
 | 5 | Senolytic (dasatinib + quercetin) | Removes senescent cells that accumulate after missegregation | *Genetic* clearance of p16⁺ senescent cells delayed ageing disorders in BubR1 hypomorphs [12]; D+Q itself not tested there | Dasatinib is a cytotoxic kinase inhibitor | Toxicity likely outweighs benefit. **Reserve only** | **C** |
 
-**Lead hypothesis: nicotinamide riboside.** It is the only candidate combining a mechanism that acts directly on the defect (BUBR1 stability), supporting evidence in a BubR1 mouse model, and human safety data that include young children. NR (as nicotinamide riboside chloride) also received FDA orphan-drug and rare paediatric disease designations for ataxia-telangiectasia in June 2024, as announced by the manufacturer, showing an existing regulatory path for paediatric use. It is sold widely as a dietary supplement (the ingredient itself is patent-protected), which keeps access simple and supports scalability.
+**Lead strategy: NAD⁺ repletion, with two options.** **Niacin** is the *approved medication* on this axis: a prescription vitamin B3 drug that raised blood NAD⁺ up to 8-fold in a human trial [26]. **Nicotinamide riboside** has the stronger *paediatric* safety record (open-label use in children with ataxia-telangiectasia from age 3) and causes no flushing; as nicotinamide riboside chloride it received FDA orphan-drug and rare paediatric disease designations for ataxia-telangiectasia in June 2024 (manufacturer announcement), but it is sold as a supplement, not an approved medicine. Both act on the defect the mechanism identifies (BUBR1 turnover), via the NAD⁺ → SIRT2 lever shown in a BubR1 mouse model [5]. The choice between them, and whether to use either, belongs to the clinical team after the cell experiments (Section 10).
 
-**What NR cannot do.** Even SIRT2 overexpression did not restore normal BubR1 levels in mice [5, 6]. The realistic aim is to **reduce the rate of missegregation**, not to cure the condition.
+**What NAD⁺ repletion cannot do.** Even SIRT2 overexpression did not restore normal BubR1 levels in mice [5, 6]. The realistic aim is to **reduce the rate of missegregation**, not to cure the condition.
+
+### 7.1 Personalised checks from the child's genome
+
+Two local checks (`tools/check_vcf_genes.py`, `tools/check_pgx.py`) asked whether *this* child can use the proposed drugs and which future drugs carry extra genetic risk for him. Only gene-level categories are reported; genotypes stay local.
+
+**Can he convert the lead drugs into NAD⁺?** None of the nine genes needed showed a rare protein- or splice-altering variant: the niacin route (*NAPRT*, *NADSYN1*), the NR route (*NMRK1*, *NMRK2*), the shared final step (*NMNAT1–3*), the salvage enzyme (*NAMPT*) and the target lever itself (*SIRT2*). **His genome supports both options**, so the choice between niacin and NR rests on tolerability and clinical judgement.
+
+**Pharmacogenomic safety (19 sites in 10 genes).**
+
+| Gene | Drugs affected | Result for this child |
+|---|---|---|
+| *CEP72* | Vincristine | **Risk genotype present**: associated with more severe vincristine-induced neuropathy in children [28] |
+| *CYP3A5* | Vincristine | **Non-expresser**: slower vincristine clearance, associated with more neuropathy [29] |
+| *CYP2C19* | PPIs, voriconazole, clopidogrel | Intermediate metaboliser: follow CPIC guidance if these are used |
+| *TPMT*, *NUDT15*, *DPYD*, *UGT1A1*, *G6PD*, *CYP2C9*, *SLCO1B1* | Thiopurines, fluoropyrimidines, irinotecan, rasburicase, NSAIDs, statins | No tested risk alleles |
+
+**Why this matters.** Vincristine is standard chemotherapy for the tumour type seen in MVA, and the patient's muscle feature was classified as possibly treatment-related (Section 3.1). Carrying risk factors at two vincristine loci gives a biological reason for heightened vulnerability, and is a flag for the oncology team if vincristine is used again. These are research-grade associations without a formal dosing guideline; they inform monitoring, not a change in treatment by themselves.
 
 ---
 
@@ -264,7 +295,9 @@ These are considerations to support a clinical team's own judgement, not a proto
 - Repeat the aneuploidy measurement at pre-set intervals; this is the primary readout.
 - Continue the child's existing cancer surveillance exactly as before. Because raising NAD⁺ could in theory support tumour cell metabolism, any new mass or unexplained change should prompt stopping and review.
 - Use a pre-specified stop rule (adverse effects, rising aneuploidy, or no change after a defined period).
-- Prefer NR over high-dose nicotinamide: at high concentrations nicotinamide inhibits sirtuins, the opposite of the intended effect.
+- If niacin is chosen: monitor liver tests and expect flushing; avoid sustained-release forms at high doses.
+- Pharmacogenomics (Section 7.1): if vincristine is used, the child's *CEP72* and *CYP3A5* results suggest closer neuropathy monitoring; *CYP2C19* intermediate metaboliser status is relevant to PPIs and voriconazole.
+- Prefer NR or niacin over high-dose nicotinamide: at high concentrations nicotinamide inhibits sirtuins, the opposite of the intended effect.
 
 **Drug classes to use with caution in MVA generally**
 Agents that disrupt cell division or damage DNA (Section 6) may worsen chromosome errors in a child whose checkpoint is already weak. Where alternatives exist for other indications, clinicians may wish to weigh this.
@@ -273,7 +306,7 @@ Agents that disrupt cell division or damage DNA (Section 6) may worsen chromosom
 
 ## 10. Validation plan
 
-1. **Cell model.** In MVA patient-derived cells (or *BUB1B*-knockdown lines), measure BUBR1 protein level, K668 acetylation and missegregation rate (live imaging, micronucleus counts) with and without NR across a dose range.
+1. **Cell model.** In MVA patient-derived cells (or *BUB1B*-knockdown lines), measure BUBR1 protein level, K668 acetylation and missegregation rate (live imaging, micronucleus counts) with and without NR across a dose range. Test **niacin and NR side by side**, with blood-equivalent NAD⁺ measured in the cells, and include *CDKN1A* (p21) and interferon genes as safety readouts, since LINCS suggests niacin may dampen them.
 2. **Dose–response and specificity.** Confirm any BUBR1 increase is dose-dependent and SIRT2-dependent (abolished by SIRT2 knockdown), and check that high-dose nicotinamide does not show the opposite effect.
 3. **Animal model.** Test NR in BubR1^H/H mice for BubR1 level, aneuploidy rate and tumour incidence over time.
 4. **Only then, n-of-1.** Under the child's clinicians and an ethics framework: baseline and on-treatment measurement of the percentage of aneuploid cells in blood (karyotype or single-cell sequencing), plus safety monitoring, with a pre-specified stop rule.
@@ -282,7 +315,7 @@ Agents that disrupt cell division or damage DNA (Section 6) may worsen chromosom
 
 ## 11. Impact, innovation and scalability
 
-- **Impact.** The lead is cheap, oral, widely available and has paediatric safety data, so it could be tested quickly if the cell work is positive. The exclusion table is useful on its own: it tells clinicians which commonly used drug classes to be cautious with in MVA.
+- **Impact.** Both lead options are cheap and oral: niacin is an approved medicine and NR has paediatric safety data, so it could be tested quickly if the cell work is positive. The exclusion table is useful on its own: it tells clinicians which commonly used drug classes to be cautious with in MVA.
 - **Innovation.** The strategy targets protein *stability* (the actual defect in this genotype class), not the gene. Three independent routes (gene, phenotype, transcriptome) are combined, each feature of the patient is classified as genetic or not with a network test, and the transcriptomic route shows that reversal must exclude drugs that silence the p53/interferon alarm. The pipeline combines direction-aware filtering, a whole-drug safety pass and explicit labelling of literature-only evidence.
 - **Scalability.** Both tools are disease-agnostic: the gene-first screen runs on any gene via a JSON config, and the phenotype-first analysis runs on any patient's HPO list; the chromosome-instability hazard filter is shared across MVA genes (*BUB1B*, *TRIP13*, *CEP57*). Every run writes a full exclusion log and provenance file, so results are auditable and reproducible.
 
@@ -291,7 +324,7 @@ Reproduce:
 ```bash
 cd track2/pipeline
 python3 repurpose.py --config config/bub1b.json --out results/
-# 19 Oct 2026 run: 6 retained (5 literature + 1 for review), 551 excluded; live databases drift
+# 19 Oct 2026 run: 7 retained (6 literature + 1 for review), 551 excluded; live databases drift
 
 cd ../phenotype
 python3 phenotype.py --hpo patient_hpo.txt --gene BUB1B --related CEP57,TRIP13 \
@@ -304,6 +337,8 @@ python3 signature_reversal.py --genes BUB1B,CEP57,TRIP13 --config ../pipeline/co
 
 # local only (never commit the output): second-diagnosis check
 python3 ../tools/check_vcf_genes.py --vcf /path/to/patient.vcf.gz
+python3 ../tools/check_vcf_genes.py --vcf /path/to/patient.vcf.gz --genes NAPRT,NADSYN1,NMRK1,NMRK2,NMNAT1,NMNAT2,NMNAT3,NAMPT,SIRT2
+python3 ../tools/check_pgx.py --vcf /path/to/patient.vcf.gz
 ```
 
 ---
@@ -311,7 +346,7 @@ python3 ../tools/check_vcf_genes.py --vcf /path/to/patient.vcf.gz
 ## 12. Methods and AI use
 
 - **Data used:** the hackathon case data (Track 1 genotype; patient HPO terms, processed locally) and public resources (DGIdb, Open Targets, HPO, STRING, LINCS L1000 via Enrichr, WHO ATC via ChEMBL, published literature). No subject data are reproduced in this report or the repository.
-- **Code:** `track2/pipeline/repurpose.py` (gene-first screen) and `track2/phenotype/phenotype.py` (phenotype-first analysis; patient HPO terms are read from a local, git-ignored file), `track2/lincs/signature_reversal.py` (transcriptome-first route) and `track2/tools/check_vcf_genes.py` (local second-diagnosis check); configs in `track2/pipeline/config/`; every run writes a provenance file recording sources, configuration and gene set.
+- **Code:** `track2/pipeline/repurpose.py` (gene-first screen) and `track2/phenotype/phenotype.py` (phenotype-first analysis; patient HPO terms are read from a local, git-ignored file), `track2/lincs/signature_reversal.py` (transcriptome-first route) `track2/tools/check_vcf_genes.py` (local gene-panel checks: second diagnosis, NAD⁺ conversion genes) and `track2/tools/check_pgx.py` (local pharmacogenomic check); configs in `track2/pipeline/config/`; every run writes a provenance file recording sources, configuration and gene set.
 - **AI assistance:** Anthropic, Claude Opus 5.5 via claude.ai, Max plan; "Help improve Claude" setting **[OFF]**. Used for literature triage, drafting text and writing pipeline code; all references and outputs were checked by the team. The patient's HPO term IDs were entered into the assistant; no VCF, clinical document or other case files were uploaded, and the second-diagnosis VCF check was run locally.
 
 ## 13. Limitations
@@ -321,9 +356,10 @@ python3 ../tools/check_vcf_genes.py --vcf /path/to/patient.vcf.gz
 - NR safety data come from a different disease and small, open-label studies.
 - Database results depend on DGIdb and Open Targets at run time; counts can change as these update.
 - LINCS signatures come from cancer cell lines and measure transcripts, not protein stability; NR and NMN are not in LINCS.
+- Niacin was not in the pre-specified LINCS hypothesis; its strong reversal score is exploratory, and the post-hoc group p-value (0.024) is not corrected for that choice.
 - The genetic-or-not classification uses HPO annotations, which are incomplete; "secondary" and "acquired" are hypotheses pending the clinical history.
 
-**Future work.** Review copy number across the tubulopathy genes (especially *CLCNKB* deletions) if the clinical history does not explain the renal features; add variant-effect scores (AlphaMissense, SpliceAI) for the missense allele; test NR and the exploratory division-restoring compounds side by side in patient cells (Section 10).
+**Future work.** Align the raw reads (not used here) to review copy number across the tubulopathy genes (especially *CLCNKB* deletions) and *CYP2D6*, if the clinical history does not explain the renal features; test niacin, NR and the exploratory division-restoring compounds side by side in patient cells (Section 10).
 
 ---
 
@@ -352,5 +388,13 @@ python3 ../tools/check_vcf_genes.py --vcf /path/to/patient.vcf.gz
 20. Bakhoum SF, et al. Chromosomal instability drives metastasis through a cytosolic DNA response. *Nature.* 2018;553(7689):467–472.
 21. WHO Collaborating Centre for Drug Statistics Methodology. ATC classification, group L01 (antineoplastic agents), accessed via ChEMBL.
 22. Posey JE, et al. Resolution of disease phenotypes resulting from multilocus genomic variation. *N Engl J Med.* 2017;376(1):21–31.
+23. Cheng J, et al. Accurate proteome-wide missense variant effect prediction with AlphaMissense. *Science.* 2023;381(6664):eadg7492.
+24. Rentzsch P, et al. CADD: predicting the deleteriousness of variants throughout the human genome. *Nucleic Acids Res.* 2019;47(D1):D886–D894.
+25. Jaganathan K, et al. Predicting splicing from primary sequence with deep learning. *Cell.* 2019;176(3):535–548.
+26. Pirinen E, et al. Niacin cures systemic NAD⁺ deficiency and improves muscle performance in adult-onset mitochondrial myopathy. *Cell Metab.* 2020;31(6):1078–1090.
+27. Karczewski KJ, et al. The mutational constraint spectrum quantified from variation in 141,456 humans. *Nature.* 2020;581(7809):434–443.
+28. Diouf B, et al. Association of an inherited genetic variant with vincristine-related peripheral neuropathy in children with acute lymphoblastic leukemia. *JAMA.* 2015;313(8):815–823.
+29. Egbelakin A, et al. Increased risk of vincristine neurotoxicity associated with low CYP3A5 expression genotype in children with acute lymphoblastic leukemia. *Pediatr Blood Cancer.* 2011;56(3):361–367.
+30. Clinical Pharmacogenetics Implementation Consortium (CPIC) guidelines, cpicpgx.org (accessed October 2026).
 
 *Data from the hackathon dataset are not reproduced here, per hackathon rules. This report is released under CC BY 4.0.*
