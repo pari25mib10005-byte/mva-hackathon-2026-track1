@@ -1,3 +1,7 @@
+## ➜ Track 2 (drug repurposing) submission
+Everything for Track 2 is in [`track2/`](track2/): the report ([PDF](track2/pari25mib10005_track2_report.pdf)), the methods description ([xlsx](track2/pari25mib10005_track2_methods.xlsx)) and the code for all three routes. Start with [`track2/README.md`](track2/README.md).
+
+---
 # MVA Hackathon 2026 — Track 1 (Variant Prediction)
 
 Team PHA entry for *Rare Disease, Real Kid: The MVA Hackathon 2026*
